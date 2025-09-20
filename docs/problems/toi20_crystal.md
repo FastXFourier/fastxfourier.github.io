@@ -1,4 +1,10 @@
-# คำอธิบายวิธีทำพร้อม code สำหรับข้อ [toi21\_crystal](https://otog.in.th/problem/1089)
+---
+title: toi21_duty_free
+tags: [TOI, LIS, Coordinate Compression, Hard]
+---
+# [toi21\_crystal](https://otog.in.th/problem/1089)
+
+---
 
 ## สรุปโจทย์
 
