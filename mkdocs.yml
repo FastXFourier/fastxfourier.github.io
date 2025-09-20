@@ -14,7 +14,7 @@ theme:
     - content.code.copy
     - content.code.select
   font:
-    text: "Itim"
+    text: "Anuphan"
   logo: assets/images/logo.png
   favicon: assets/images/logo.png
   palette:
@@ -32,12 +32,11 @@ theme:
         name: Switch to dark mode
       primary: white
       accent: deep purple
-      
+
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://www.googletagmanager.com/gtag/js?id=G-C608GRF2WD
   - js/ga-init.js
-
 
 markdown_extensions:
   - pymdownx.arithmatex:
@@ -65,4 +64,3 @@ extra:
       link: https://github.com/fastxfourier
     - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/people/Fast-X-Fourier/61576340114509/
-
