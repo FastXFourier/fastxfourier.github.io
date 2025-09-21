@@ -14,7 +14,7 @@ hide: navigation, toc
 <div class="tagbox" id="tag-picker" style="border:1px solid #868686; padding:10px; margin-bottom:20px; border-radius:5px; max-width:600px; display:none;">
 
   <!-- Difficulty filter -->
-  <strong>Difficulty:</strong><br>
+  <strong>Difficulty: (วัดจากความยากในการแก้เมื่อคุณเข้าใจเนื้อหาที่ต้องใช้ในโจทย์ข้อนั้นแล้ว)</strong><br>
   <label><input type="checkbox" value="Very Easy" class="filter-difficulty"> Very Easy</label>
   <label><input type="checkbox" value="Easy" class="filter-difficulty"> Easy</label>
   <label><input type="checkbox" value="Medium" class="filter-difficulty"> Medium</label>
@@ -31,7 +31,7 @@ hide: navigation, toc
   <strong>Topics:</strong><br>
   <label><input type="checkbox" value="Sorting" class="tag"> Sorting</label>
   <label><input type="checkbox" value="Arrays" class="tag"> Arrays</label>
-  <label><input type="checkbox" value="If-else" class="tag"> If-else</label>
+  <label><input type="checkbox" value="If-Else" class="tag"> If-Else</label>
   <label><input type="checkbox" value="Math" class="tag"> Math</label>
   <label><input type="checkbox" value="Data Structures" class="tag"> Data Structures</label>
   <label><input type="checkbox" value="Disjoint Set Union" class="tag"> Disjoint Set Union</label>
@@ -75,25 +75,25 @@ hide: navigation, toc
 [View Solution](/problems/posn1_67_bkk_p3)
 </div>
 
-<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="If-else" markdown="1">
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="If-Else" markdown="1">
 ### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 4](https://grader.gchan.moe/problemset/c1_bkk67_4)
 
 !!! tip "**Difficulty**: `Very Easy`"
 !!! quote "**Source**: `POSN1`"
 ??? Topics
-    - `If-else`
+    - `If-Else`
 
 [View Solution](/problems/posn1_67_bkk_p4)
 </div>
 
-<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Arrays,If-else" markdown="1">
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Arrays,If-Else" markdown="1">
 ### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 5](https://grader.gchan.moe/problemset/c1_bkk67_5)
 
 !!! tip "**Difficulty**: `Very Easy`"
 !!! quote "**Source**: `POSN1`"
 ??? Topics
     - `Arrays`
-    - `If-else`
+    - `If-Else`
 
 [View Solution](/problems/posn1_67_bkk_p5)
 </div>
@@ -121,10 +121,10 @@ hide: navigation, toc
 [View Solution](/problems/toi20_bit_string)
 </div>
 
-<div class="problem-card" data-difficulty="Easy" data-source="TOI" data-topics="Data Structures" markdown="1">
+<div class="problem-card" data-difficulty="Medium" data-source="TOI" data-topics="Data Structures" markdown="1">
 ### [toi20_orbs](https://grader.gchan.moe/problemset/c1_bkk67_1)
 
-!!! success "**Difficulty**: `Easy`"
+!!! warning "**Difficulty**: `Medium`"
 !!! quote "**Source**: `TOI`"
 ??? Topics
     - `Data Structures`
