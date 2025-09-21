@@ -43,6 +43,7 @@ int main(){
     scanf("%d", &n);
     if (n == 1) printf("7");
     else printf("%d", n - 1);
+    return 0;
 }
 ```
 

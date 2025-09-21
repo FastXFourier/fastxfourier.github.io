@@ -75,6 +75,7 @@ int main(){
     else {
         printf("no");
     }
+    return 0;
 }
 ```
 

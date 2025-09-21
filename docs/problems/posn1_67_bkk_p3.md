@@ -60,7 +60,7 @@ $h(t) = 3t(t + 1) - 2t$<br>
 $h(t) = 3t^2 + 3t - 2t$<br>
 $\therefore h(t) = 3t^2 + t$
 
-จะได้สมการคำนวณความสูง ณ $t$ ใดๆ เป็น: $t(3t+1)$
+จะได้สมการคำนวณความสูง ณ $t$ ใดๆ เป็น: $3t^2 + t$
 
 ---
 
@@ -72,7 +72,8 @@ $\therefore h(t) = 3t^2 + t$
 int main(){
     int t; 
     scanf("%d", &t);
-    printf("%d", t * (3 * t + 1));
+    printf("%d", 3*t*t + t);
+    return 0;
 }
 ```
 

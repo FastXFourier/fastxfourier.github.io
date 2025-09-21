@@ -54,6 +54,7 @@ int main() {
         if (str[i] == str[i - 1]) continue;
         printf("%c ", str[i]);
     }
+    return 0;
 }
 ```
 

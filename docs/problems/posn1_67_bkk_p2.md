@@ -55,6 +55,7 @@ int main(){
             count_b[b[i]]++;
         }
     }
+    return 0;
 }
 ```
 
