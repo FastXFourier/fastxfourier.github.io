@@ -27,16 +27,9 @@ tags: [TOI, LIS, Coordinate Compression, Hard]
 
 **โจทย์:** หาว่าเก็บ Crystal ได้มากสุดเท่าไร
 
----
+## !!! note "Prerequisites" - LIS (Longest Increasing Subsequence), Fenwick Tree, Sweep Line, Coordinate Compression
 
-## Prerequisites
-
-* LIS (Longest Increasing Subsequence)
-* Fenwick Tree (BIT) — ในที่นี้จะใช้ Fenwick เป็น data structure สำหรับทำ LIS แบบออนไลน์
-* Sweep line
-* Coordinate Compression
-
----
+## Solution
 
 ## วิธีทำ
 
@@ -58,9 +51,7 @@ tags: [TOI, LIS, Coordinate Compression, Hard]
 เห็นได้ว่านี่ก็คือโจทย์ LIS โดยเราจะใช้ Fenwick tree เป็น data structure ในการทำ LIS (ถ้าไม่รู้วิธีทำให้ลองศึกษาจากบทความนี้: [Longest Increasing Subsequence using BIT — GeeksforGeeks](https://www.geeksforgeeks.org/longest-increasing-subsequence-using-bit))
 **note:** ในวิธีนี้จะใช้ coordinate compression ซึ่งเป็นสิ่งที่จำเป็นต้องใช้
 
----
-
-## Solution code
+## code
 
 ```cpp
 #include <bits/stdc++.h>
