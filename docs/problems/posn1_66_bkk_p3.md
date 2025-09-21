@@ -40,11 +40,14 @@ int main(){
     scanf("%d", &N);
     int a, b, c;
     a = N / 100; b = N % 100 / 10, c = N % 10;
+    if (!(a >= 1 && a <= 6)) a = 0;
+    if (!(b >= 1 && b <= 6)) b = 0;
+    if (!(c >= 1 && c <= 6)) c = 0;
     char dice[7][3][4] = {
         {
             "   ",
             "   ",
-            "   "
+            "___"
         },
         {
             "   ",
@@ -77,7 +80,7 @@ int main(){
             "* *"
         }
     };
-    for (int i = 0; i < 3; i++) printf("%s%s%s\n", dice[a][i], dice[b][i], dice[c][i]);
+    for (int i = 0; i < 3; i++) printf("%s %s %s\n", dice[a][i], dice[b][i], dice[c][i]);
 }
 ```
 
