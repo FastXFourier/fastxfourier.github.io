@@ -44,6 +44,8 @@ tags: [TOI, DSU, Bruteforce, Medium]
 !!! note "Prerequisites"
     - DSU (Disjoint Set Union / Union-Find)
 
+---
+
 ## Solution
 
 ### วิธีทำ (สรุปขั้นตอน)
@@ -70,7 +72,7 @@ tags: [TOI, DSU, Bruteforce, Medium]
 
 ---
 
-### Code
+## Code
 
 ```cpp
 #include <bits/stdc++.h>
@@ -174,8 +176,6 @@ int32_t main(){
     return 0;
 }
 ```
-
----
 
 !!! note "Total Time Complexity"
   โดยรวมประมาณ \$O((n + m),\alpha(n))\$ สำหรับการทำ DSU และการ sort ค่า \$(a,b)\$ จะมีค่า \$O(n\log n)\$ ดังนั้นรวมแล้วเวลาอยู่ในกรอบที่ยอมรับได้สำหรับ \$n \le 10^6, m \le 3\cdot 10^6\$ (ขึ้นกับการจัดการ I/O และ optimization ในโค้ดจริง)
