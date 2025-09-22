@@ -5,6 +5,7 @@ tags: [TOI, Bruteforce, DFS, DP, Hard]
 # [toi21_quartet](https://otog.in.th/problem/1087)
 
 ---
+
 ## Problem 
 
 ### สรุปโจทย์
@@ -28,10 +29,12 @@ tags: [TOI, Bruteforce, DFS, DP, Hard]
   	- Knapsack DP
    	- DP on Tree
 
-### ข้อสังเกต
-จำนวนถนน จะเท่ากับ $N+M−1$ ซึ่งหมายความว่า Graph ที่ได้มาจะมีลักษณะเป็น Tree
+---
 
 ## Solution
+
+### ข้อสังเกต
+จำนวนถนน จะเท่ากับ $N+M−1$ ซึ่งหมายความว่า Graph ที่ได้มาจะมีลักษณะเป็น Tree
 
 ### ไอเดียหลัก
 เราจะเก็บว่า สำหรับแต่ละศูนย์ตำบล $u$ ถ้าเราเลือกให้หมู่บ้าน $4$ แห่งเดินทางมายังศูนย์ตำบล $u$ โดยไม่ใช้ถนนสายเดียวกันเลย เราจะนับได้กี่กลุ่ม (นับจำนวนกลุ่มอพยพปลอดภัยที่สามารถเดินทางมา $u$ ได้)
@@ -56,7 +59,7 @@ tags: [TOI, Bruteforce, DFS, DP, Hard]
 
 ---
 
-### Code:
+## Code:
 
 ```cpp
 #include <bits/stdc++.h> 
@@ -109,6 +112,7 @@ int32_t main(){
 	cout << ans; 
 }
 ```
+
 !!! note "Total Time Complexity"
 	$O(n+m)$
 
