@@ -1,17 +1,19 @@
 ---
 title: toi21_tech_sprites
-tags: [TOI, Bruteforce, Medium]
+tags: [TOI, DSU, Bruteforce, Medium]
 ---
 # [toi21\_tech\_sprites](https://otog.in.th/problem/1086)
 
 ---
 
-## สรุปโจทย์
+## Problem
+
+### สรุปโจทย์
 
 มี Graph หนึ่งที่มีจำนวน node และ edge ดังนี้:
 
-* \$1 \le n \le 10^6\$ nodes (บ้านของ Tech-Sprites ที่ \$i\$)
-* \$1 \le m \le 3\cdot 10^6\$ edges
+* \$n\$ nodes (บ้านของ Tech-Sprites ที่ \$i\$)
+* \$m\$ edges
 
 แต่ละ node \$i\$ มีค่า 2 ค่า: \$a\[i], b\[i]\$.
 
@@ -21,9 +23,7 @@ tags: [TOI, Bruteforce, Medium]
 
 **โจทย์:** หาจำนวน edge ขั้นต่ำที่ต้องเพิ่ม
 
----
-
-## ตัวอย่าง
+### ตัวอย่าง
 
 กรณีนี้ไม่ต้องเพิ่ม edge:
 
@@ -37,15 +37,16 @@ tags: [TOI, Bruteforce, Medium]
 
 ![example3](https://i.ibb.co/rKb6Gbh7/Screenshot-2025-05-27-171026.png)
 
----
+!!! note "Constraints"
+    \$1 \le n \le 10^6\$
+    \$1 \le m \le 3\cdot 10^6\$
+  
+!!! note "Prerequisites"
+    - DSU (Disjoint Set Union / Union-Find)
 
-## Prerequisites
+## Solution
 
-* DSU (Disjoint Set Union / Union-Find)
-
----
-
-## วิธีทำ (สรุปขั้นตอน)
+### วิธีทำ (สรุปขั้นตอน)
 
 1. เก็บข้อมูล `(a[i], b[i], i)` ลงใน array แล้ว sort ตามลำดับการออกจริง — คือเรียงตาม `(a[i], b[i])` (a ก่อน ถ้า a เท่ากันใช้ b)
 2. ใช้ DSU เพื่อหา connected-components ของกราฟเดิม
@@ -69,7 +70,7 @@ tags: [TOI, Bruteforce, Medium]
 
 ---
 
-## Code (ตัวอย่างการ implement)
+### Code
 
 ```cpp
 #include <bits/stdc++.h>
@@ -176,6 +177,5 @@ int32_t main(){
 
 ---
 
-## Total Time Complexity
-
-โดยรวมประมาณ \$O((n + m),\alpha(n))\$ สำหรับการทำ DSU และการ sort ค่า \$(a,b)\$ จะมีค่า \$O(n\log n)\$ ดังนั้นรวมแล้วเวลาอยู่ในกรอบที่ยอมรับได้สำหรับ \$n \le 10^6, m \le 3\cdot 10^6\$ (ขึ้นกับการจัดการ I/O และ optimization ในโค้ดจริง)
+!!! note "Total Time Complexity"
+  โดยรวมประมาณ \$O((n + m),\alpha(n))\$ สำหรับการทำ DSU และการ sort ค่า \$(a,b)\$ จะมีค่า \$O(n\log n)\$ ดังนั้นรวมแล้วเวลาอยู่ในกรอบที่ยอมรับได้สำหรับ \$n \le 10^6, m \le 3\cdot 10^6\$ (ขึ้นกับการจัดการ I/O และ optimization ในโค้ดจริง)
