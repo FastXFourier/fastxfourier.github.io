@@ -113,7 +113,7 @@ hide: navigation, toc
 [View Solution](/problems/posn1_67_bkk_p1)
 </div>
 
-<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Arrays" markdown="1">
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Arrays,Strings" markdown="1">
 ### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 2](https://grader.gchan.moe/problemset/c1_bkk67_2)
 
 !!! tip "**Difficulty**: `Very Easy`"
