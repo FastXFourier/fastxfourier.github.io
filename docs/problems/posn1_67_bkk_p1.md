@@ -19,6 +19,7 @@
     |myNameis|N a e i m s y|
 
 !!! note "Prerequisites"
+    - Strings
     - Sortings
 ---
 
@@ -39,7 +40,9 @@
 int main() {
     char str[35];
     scanf("%s", str);
-    int n = strlen(str);
+    int n = strlen(str); // strlen(): หาความยาวของ String
+
+    // ทำการเรียงตัวอักษรใน String (Bubble Sort)
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n - 1; j++) {
             if (str[j] > str[j + 1]) {
@@ -49,6 +52,8 @@ int main() {
             }
         }
     }
+
+    // พิมพ์คำตอบออกมา
     printf("%c ", str[0]);
     for (int i = 1; i < n; i++) {
         if (str[i] == str[i - 1]) continue;

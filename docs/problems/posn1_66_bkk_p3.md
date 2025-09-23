@@ -18,15 +18,15 @@
     | 351      |<pre style="margin-top: 0px; margin-bottom: 0px">*  * *   </pre><br><pre style="margin-top: 0px; margin-bottom: 0px"> *  *  * </pre><br><pre style="margin-top: 0px; margin-bottom: 0px">  ** *   </pre>|
 
 !!! note "Prerequisites"
-    - If-Else Conditions
     - Arrays
+    - Strings
 ---
 
 ## Solution
 
 ### วิธีทำ
 
-เราจะเก็บว่าจำนวนใดหน้าตาเป็นอย่างไรในแต่ละบรรทัดและพิมพ์ผลลัพธ์ทีละบรรทัดให้ครับทั้ง 3 บรรทัด
+เราจะเก็บว่าจำนวนใดหน้าตาเป็นอย่างไรในแต่ละบรรทัดและพิมพ์ผลลัพธ์ทีละบรรทัดให้ครบทั้ง 3 บรรทัด แล้วก็ไล่พิมพ์แต่ละตัวให้ถูกต้อง
 
 ---
 
@@ -38,11 +38,15 @@
 int main(){
     int N;
     scanf("%d", &N);
+
+    // ดึงค่าในแต่ละหลักออกมา
     int a, b, c;
     a = N / 100; b = N % 100 / 10, c = N % 10;
     if (!(a >= 1 && a <= 6)) a = 0;
     if (!(b >= 1 && b <= 6)) b = 0;
     if (!(c >= 1 && c <= 6)) c = 0;
+
+    // เก็บรูปแบบของลูกเต๋าในแต่ละบรรทัด
     char dice[7][3][4] = {
         {
             "   ",
@@ -80,6 +84,8 @@ int main(){
             "* *"
         }
     };
+
+    // loop แล้วพิมพ์ออกมาโดยตรง
     for (int i = 0; i < 3; i++) printf("%s %s %s\n", dice[a][i], dice[b][i], dice[c][i]);
 }
 ```

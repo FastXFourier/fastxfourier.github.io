@@ -20,6 +20,7 @@
 
 !!! note "Prerequisites"
     - Arrays
+    - Strings
 ---
 
 ## Solution
@@ -43,13 +44,18 @@
 int main(){
     char a[25], b[25];
     scanf("%s %s", a, b);
-    int n = strlen(a), m = strlen(b);
+    int n = strlen(a), m = strlen(b); // strlen(): หาความยาวของ String
+
+    // นับการโผล่ตัวของตัวอักษรแต่ละตัวในสตริง A
     int count_a[200] = {0};
     for (int i = 0; i < n; i++) {
         count_a[a[i]]++;
     }
+
+    // loop เพื่อหาคำตอบ
     int count_b[200] = {0};
     for (int i = 0; i < m; i++) {
+        // ถ้าหากว่าตัวอักษรนี้โผล่มาใน A และโผล่มาใน B เป็นครั้งแรก ก็ให้พิมพ์ออกมา
         if (count_a[b[i]] > 0 && count_b[b[i]] == 0) {
             printf("%c ", b[i]);
             count_b[b[i]]++;

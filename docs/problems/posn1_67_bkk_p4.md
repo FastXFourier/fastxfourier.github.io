@@ -18,7 +18,7 @@
     | 3       |2|
 
 !!! note "Prerequisites"
-    - If-Else Conditions
+    - Math
 ---
 
 ## Solution

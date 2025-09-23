@@ -29,9 +29,10 @@ hide: navigation, toc
 
   <!-- Topics filter -->
   <strong>Topics:</strong><br>
+  <label><input type="checkbox" value="C/C++ Basics" class="tag"> C/C++ Basics</label>
   <label><input type="checkbox" value="Sorting" class="tag"> Sorting</label>
   <label><input type="checkbox" value="Arrays" class="tag"> Arrays</label>
-  <label><input type="checkbox" value="If-Else" class="tag"> If-Else</label>
+  <label><input type="checkbox" value="Strings" class="tag"> Strings</label>
   <label><input type="checkbox" value="Math" class="tag"> Math</label>
   <label><input type="checkbox" value="Data Structures" class="tag"> Data Structures</label>
   <label><input type="checkbox" value="Disjoint Set Union" class="tag"> Disjoint Set Union</label>
@@ -42,12 +43,71 @@ hide: navigation, toc
 <!-- Problems grid -->
 <div class="grid cards" markdown="1">
 
-<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Sorting" markdown="1">
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="If-Else,C/C++ Basics" markdown="1">
+### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2566 ข้อที่ 1](https://grader.gchan.moe/problemset/c1_bkk66_1)
+
+!!! tip "**Difficulty**: `Very Easy`"
+!!! quote "**Source**: `POSN1`"
+??? Topics
+    - `C/C++ Basics`
+
+[View Solution](/problems/posn1_66_bkk_p1)
+</div>
+
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Arrays,Math" markdown="1">
+### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2566 ข้อที่ 2](https://grader.gchan.moe/problemset/c1_bkk66_2)
+
+!!! tip "**Difficulty**: `Very Easy`"
+!!! quote "**Source**: `POSN1`"
+??? Topics
+    - `Arrays`
+    - `Math`
+
+[View Solution](/problems/posn1_66_bkk_p2)
+</div>
+
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="If-Else,Arrays,Strings" markdown="1">
+### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2566 ข้อที่ 3](https://grader.gchan.moe/problemset/c1_bkk66_3)
+
+!!! tip "**Difficulty**: `Very Easy`"
+!!! quote "**Source**: `POSN1`"
+??? Topics
+    - `Arrays`
+    - `Strings`
+
+[View Solution](/problems/posn1_66_bkk_p3)
+</div>
+
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="C/C++ Basics" markdown="1">
+### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2566 ข้อที่ 4](https://grader.gchan.moe/problemset/c1_bkk66_4)
+
+!!! tip "**Difficulty**: `Very Easy`"
+!!! quote "**Source**: `POSN1`"
+??? Topics
+    - `C/C++ Basics`
+
+[View Solution](/problems/posn1_66_bkk_p4)
+</div>
+
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Arrays,Strings" markdown="1">
+### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2566 ข้อที่ 5](https://grader.gchan.moe/problemset/c1_bkk66_5)
+
+!!! tip "**Difficulty**: `Very Easy`"
+!!! quote "**Source**: `POSN1`"
+??? Topics
+    - `Arrays`
+    - `Strings`
+
+[View Solution](/problems/posn1_66_bkk_p5)
+</div>
+
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Strings,Sorting" markdown="1">
 ### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 1](https://grader.gchan.moe/problemset/c1_bkk67_1)
 
 !!! tip "**Difficulty**: `Very Easy`"
 !!! quote "**Source**: `POSN1`"
 ??? Topics
+    - `Strings`
     - `Sorting`
 
 [View Solution](/problems/posn1_67_bkk_p1)
@@ -60,6 +120,7 @@ hide: navigation, toc
 !!! quote "**Source**: `POSN1`"
 ??? Topics
     - `Arrays`
+    - `Strings`
 
 [View Solution](/problems/posn1_67_bkk_p2)
 </div>
@@ -75,25 +136,25 @@ hide: navigation, toc
 [View Solution](/problems/posn1_67_bkk_p3)
 </div>
 
-<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="If-Else" markdown="1">
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Math" markdown="1">
 ### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 4](https://grader.gchan.moe/problemset/c1_bkk67_4)
 
 !!! tip "**Difficulty**: `Very Easy`"
 !!! quote "**Source**: `POSN1`"
 ??? Topics
-    - `If-Else`
+    - `Math`
 
 [View Solution](/problems/posn1_67_bkk_p4)
 </div>
 
-<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Arrays,If-Else" markdown="1">
+<div class="problem-card" data-difficulty="Very Easy" data-source="POSN1" data-topics="Arrays,Strings" markdown="1">
 ### [ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 5](https://grader.gchan.moe/problemset/c1_bkk67_5)
 
 !!! tip "**Difficulty**: `Very Easy`"
 !!! quote "**Source**: `POSN1`"
 ??? Topics
     - `Arrays`
-    - `If-Else`
+    - `Strings`
 
 [View Solution](/problems/posn1_67_bkk_p5)
 </div>
@@ -182,7 +243,7 @@ function applyFilter() {
 
         const visible = (selectedD.length === 0 || selectedD.some(d => cardD.includes(d))) &&
                         (selectedS.length === 0 || selectedS.some(s => cardS.includes(s))) &&
-                        (selectedT.length === 0 || selectedT.some(t => cardT.includes(t)));
+                        (selectedT.length === 0 || selectedT.every(t => cardT.includes(t)));
 
         card.style.display = visible ? '' : 'none';
     });
