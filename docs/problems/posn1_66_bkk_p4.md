@@ -16,6 +16,7 @@
     | Input      | Output                          |
     | ----------- | ------------------------------------ |
     | 30<br>4<br>15       |60|
+    ![img](../assets/images/posn1_66_bkk_p4.png.png)
 
 !!! note "Prerequisites"
     - C/C++ Basics
