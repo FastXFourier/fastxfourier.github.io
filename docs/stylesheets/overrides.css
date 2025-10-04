@@ -169,6 +169,7 @@ body.md-page-problems-index .md-main__inner {
     padding-bottom: 20px;
     background-color: white;
     color: rgb(37, 37, 37);
+    margin-bottom: 10px;
 }
 
 .problem-card-other:hover {
