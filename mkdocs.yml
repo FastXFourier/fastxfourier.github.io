@@ -14,7 +14,7 @@ theme:
     - content.code.copy
     - content.code.select
   font:
-    text: "Kanit"
+    text: "IBM Plex Sans Thai"
   logo: assets/images/logo.png
   favicon: assets/images/logo.png
   palette:
