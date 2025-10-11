@@ -2,65 +2,67 @@ site_name: Fast X Fourier
 site_url: https://fastxfourier.github.io/
 
 nav:
-  - Home: index.md
-  - Algorithms: algorithms/index.md
-  - Problems: problems/index.md
-  - Others: others/index.md
+    - Home: index.md
+    - Algorithms: algorithms/index.md
+    - Problems: problems/index.md
+    - Others: others/index.md
 
 theme:
-  name: material
-  features:
-    - navigation.tabs
-    - content.code.copy
-    - content.code.select
-  font:
-    text: "IBM Plex Sans Thai"
-  logo: assets/images/logo.png
-  favicon: assets/images/logo.png
-  palette:
-    # Dark Mode
-    - scheme: slate
-      toggle:
-        icon: material/lightbulb
-        name: Switch to light mode
-      primary: black
-      accent: deep purple
-    # Light Mode
-    - scheme: default
-      toggle:
-        icon: material/lightbulb-on-10
-        name: Switch to dark mode
-      primary: white
-      accent: deep purple
+    name: material
+    features:
+        - navigation.tabs
+        - content.code.copy
+        - content.code.select
+    font:
+        text: "IBM Plex Sans Thai"
+    logo: assets/images/logo.png
+    favicon: assets/images/logo.png
+    palette:
+        # Dark Mode
+        - scheme: slate
+          toggle:
+              icon: material/lightbulb
+              name: Switch to light mode
+          primary: black
+          accent: deep purple
+        # Light Mode
+        - scheme: default
+          toggle:
+              icon: material/lightbulb-on-10
+              name: Switch to dark mode
+          primary: white
+          accent: deep purple
 
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - https://www.googletagmanager.com/gtag/js?id=G-C608GRF2WD
-  - js/ga-init.js
+    - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    - https://www.googletagmanager.com/gtag/js?id=G-C608GRF2WD
+    - js/ga-init.js
 
 markdown_extensions:
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - admonition
-  - pymdownx.details
-  - pymdownx.magiclink
-  - pymdownx.betterem
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - attr_list
-  - md_in_html
-  - tables
+    - pymdownx.arithmatex:
+          generic: true
+    - pymdownx.highlight:
+          anchor_linenums: true
+          line_spans: __span
+          pygments_lang_class: true
+    - admonition
+    - pymdownx.details
+    - pymdownx.magiclink
+    - pymdownx.betterem
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - attr_list
+    - md_in_html
+    - tables
+    - problems_extension:
+          problems_file: problems.yaml
 extra_css:
-  - stylesheets/overrides.css
+    - stylesheets/overrides.css
 
 extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/fastxfourier
-    - icon: fontawesome/brands/facebook
-      link: https://www.facebook.com/people/Fast-X-Fourier/61576340114509/
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/fastxfourier
+        - icon: fontawesome/brands/facebook
+          link: https://www.facebook.com/people/Fast-X-Fourier/61576340114509/
