@@ -26,4 +26,5 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material
+      - run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
       - run: mkdocs gh-deploy --force
