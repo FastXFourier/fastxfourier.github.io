@@ -169,6 +169,7 @@ body.md-page-problems-index .md-main__inner {
     padding-bottom: 20px;
     background-color: white;
     color: rgb(37, 37, 37);
+    margin-bottom: 10px;
 }
 
 .problem-card-other:hover {
@@ -216,6 +217,10 @@ body.md-page-problems-index .md-main__inner {
     .tagbox {
         background: rgba(255,255,255,0.03);
         border-color: rgba(255,255,255,0.06);
+        color: #e6e6e6;
+    }
+    .tagbox * {
+        color: #e6e6e6;
     }
 
     .tag-toggle {
@@ -239,4 +244,157 @@ body.md-page-problems-index .md-main__inner {
     .md-nav__link--active, .md-tabs__link--active, .md-header, .md-footer {
         color: #e6e6e6 !important;
     }
+}
+
+/* More specific: Material theme sets `data-md-color-scheme="slate"` on <body> for dark palette.
+   Use attribute selectors to ensure overrides apply when the site is in the dark palette. */
+body[data-md-color-scheme="slate"] .submit {
+    background-color: rgba(230,230,230,0.12) !important;
+    color: #e6e6e6 !important;
+    border-color: rgba(230,230,230,0.18) !important;
+}
+body[data-md-color-scheme="slate"] .submit:hover {
+    background-color: rgba(230,230,230,0.16) !important;
+}
+body[data-md-color-scheme="slate"] .tagbox {
+    background: rgba(255,255,255,0.03) !important;
+    border-color: rgba(255,255,255,0.06) !important;
+    color: #e6e6e6 !important;
+}
+body[data-md-color-scheme="slate"] .tagbox * {
+    color: #e6e6e6 !important;
+}
+body[data-md-color-scheme="slate"] .tag-toggle {
+    background-color: rgba(255,255,255,0.04) !important;
+    color: #e6e6e6 !important;
+    border-color: rgba(230,230,230,0.12) !important;
+}
+body[data-md-color-scheme="slate"] .problem-card,
+body[data-md-color-scheme="slate"] .problem-card-other {
+    background-color: rgba(255,255,255,0.03) !important;
+    color: #e6e6e6 !important;
+    border-color: rgba(255,255,255,0.06) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6) !important;
+}
+
+/* Force text to white-ish in dark (slate) scheme to undo any accidental darkening */
+body[data-md-color-scheme="slate"] .md-typeset,
+body[data-md-color-scheme="slate"] .md-content,
+body[data-md-color-scheme="slate"] .md-main,
+body[data-md-color-scheme="slate"] .md-main__inner,
+body[data-md-color-scheme="slate"] .md-header__title,
+body[data-md-color-scheme="slate"] .md-header__topic,
+body[data-md-color-scheme="slate"] .md-header__ellipsis,
+body[data-md-color-scheme="slate"] .md-header .md-logo,
+body[data-md-color-scheme="slate"] .md-header .md-header__button,
+body[data-md-color-scheme="slate"] .md-nav__link,
+body[data-md-color-scheme="slate"] .md-tabs__link,
+body[data-md-color-scheme="slate"] .tagbox,
+body[data-md-color-scheme="slate"] .tagbox *,
+body[data-md-color-scheme="slate"] .submit,
+body[data-md-color-scheme="slate"] .tag-toggle,
+body[data-md-color-scheme="slate"] .problem-card,
+body[data-md-color-scheme="slate"] .problem-card-other {
+    color: #ffffff !important;
+}
+
+/* Make header / nav text pure white in slate to ensure visibility */
+body[data-md-color-scheme="slate"] .md-header__title,
+body[data-md-color-scheme="slate"] .md-header__topic,
+body[data-md-color-scheme="slate"] .md-header__ellipsis,
+body[data-md-color-scheme="slate"] .md-nav__link,
+body[data-md-color-scheme="slate"] .md-tabs__link {
+    color: #ffffff !important;
+}
+
+/* Also make sure any inline styles (from pages) don't force bright white when dark scheme is active */
+body[data-md-color-scheme="slate"] [style*="background:#fff"],
+body[data-md-color-scheme="slate"] [style*="background:#ffffff"],
+body[data-md-color-scheme="slate"] [style*="background: #fff"],
+body[data-md-color-scheme="slate"] [style*="background: #ffffff"] {
+    background-color: transparent !important;
+}
+
+/* Light mode: make normal text a little darker (near-black) but not pure black */
+@media (prefers-color-scheme: light) {
+    .tagbox,
+    .tagbox * {
+        color: #111214; /* slightly greyed black for text */
+    }
+
+    .md-typeset,
+    .md-content,
+    .md-main,
+    .md-main__inner,
+    .problem-card,
+    .problem-card-other {
+        color: #111214;
+    }
+
+    .submit,
+    .tag-toggle {
+        color: #111214;
+        border-color: rgba(0,0,0,0.65);
+    }
+}
+
+/* Also target the Material theme default palette attribute to ensure the change applies
+   when the site sets the default scheme via JS (body[data-md-color-scheme="default"]) */
+body[data-md-color-scheme="default"] .tagbox,
+body[data-md-color-scheme="default"] .tagbox * {
+    color: #111214 !important;
+}
+body[data-md-color-scheme="default"] .md-typeset,
+body[data-md-color-scheme="default"] .md-content,
+body[data-md-color-scheme="default"] .md-main,
+body[data-md-color-scheme="default"] .md-main__inner,
+body[data-md-color-scheme="default"] .problem-card,
+body[data-md-color-scheme="default"] .problem-card-other {
+    color: #111214 !important;
+}
+body[data-md-color-scheme="default"] .submit,
+body[data-md-color-scheme="default"] .tag-toggle {
+    color: #111214 !important;
+    border-color: rgba(0,0,0,0.65) !important;
+}
+
+/* Make header and navigation text a little darker in light mode */
+@media (prefers-color-scheme: light) {
+    .md-header__title,
+    .md-header__topic,
+    .md-header__ellipsis,
+    .md-header .md-logo,
+    .md-header .md-header__button,
+    .md-nav__link,
+    .md-tabs__link {
+        color: #0f1112 !important; /* slightly stronger black for header/nav */
+    }
+}
+
+body[data-md-color-scheme="default"] .md-header__title,
+body[data-md-color-scheme="default"] .md-header__topic,
+body[data-md-color-scheme="default"] .md-header__ellipsis,
+body[data-md-color-scheme="default"] .md-header .md-logo,
+body[data-md-color-scheme="default"] .md-header .md-header__button,
+body[data-md-color-scheme="default"] .md-nav__link,
+body[data-md-color-scheme="default"] .md-tabs__link {
+    color: #0f1112 !important;
+}
+
+.homelogo {
+    width: 200px;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: black;
+    transition-duration: 400ms;
+}
+
+.homelogo:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition-duration: 400ms;
+}
+
+body.slate .homelogo:hover {
+    box-shadow: 0 8px 16px rgb(255, 255, 255);
+    transition-duration: 400ms;
 }

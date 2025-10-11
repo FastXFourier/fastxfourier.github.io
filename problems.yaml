@@ -1,0 +1,126 @@
+# Problems Database
+# Add new problems to this file - they will automatically appear on the problems page
+#
+# Format:
+#   - id: unique_problem_identifier (used for solution URL)
+#     title: Display title for the problem
+#     link: URL to the problem statement
+#     difficulty: Very Easy | Easy | Medium | Hard
+#     source: TOI | POSN1 | etc.
+#     topics: List of topic tags
+#     solution: Path to solution page (optional, defaults to /problems/{id})
+
+problems:
+    # POSN1 2566 Problems
+    - id: posn1_66_bkk_p1
+      title: ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2566 ข้อที่ 1
+      link: https://grader.gchan.moe/problemset/c1_bkk66_1
+      difficulty: Very Easy
+      source: POSN1
+      topics:
+          - C/C++ Basics
+
+    - id: posn1_66_bkk_p2
+      title: ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2566 ข้อที่ 2
+      link: https://grader.gchan.moe/problemset/c1_bkk66_2
+      difficulty: Very Easy
+      source: POSN1
+      topics:
+          - Arrays
+          - Math
+
+    - id: posn1_66_bkk_p3
+      title: ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2566 ข้อที่ 3
+      link: https://grader.gchan.moe/problemset/c1_bkk66_3
+      difficulty: Very Easy
+      source: POSN1
+      topics:
+          - Arrays
+          - Strings
+
+    - id: posn1_66_bkk_p4
+      title: ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2566 ข้อที่ 4
+      link: https://grader.gchan.moe/problemset/c1_bkk66_4
+      difficulty: Very Easy
+      source: POSN1
+      topics:
+          - C/C++ Basics
+
+    - id: posn1_66_bkk_p5
+      title: ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2566 ข้อที่ 5
+      link: https://grader.gchan.moe/problemset/c1_bkk66_5
+      difficulty: Very Easy
+      source: POSN1
+      topics:
+          - Arrays
+          - Strings
+
+    # POSN1 2567 Problems
+    - id: posn1_67_bkk_p1
+      title: ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 1
+      link: https://grader.gchan.moe/problemset/c1_bkk67_1
+      difficulty: Very Easy
+      source: POSN1
+      topics:
+          - Strings
+          - Sorting
+
+    - id: posn1_67_bkk_p2
+      title: ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 2
+      link: https://grader.gchan.moe/problemset/c1_bkk67_2
+      difficulty: Very Easy
+      source: POSN1
+      topics:
+          - Arrays
+          - Strings
+
+    - id: posn1_67_bkk_p3
+      title: ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 3
+      link: https://grader.gchan.moe/problemset/c1_bkk67_3
+      difficulty: Very Easy
+      source: POSN1
+      topics:
+          - Math
+
+    - id: posn1_67_bkk_p4
+      title: ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 4
+      link: https://grader.gchan.moe/problemset/c1_bkk67_4
+      difficulty: Very Easy
+      source: POSN1
+      topics:
+          - Math
+
+    - id: posn1_67_bkk_p5
+      title: ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2567 ข้อที่ 5
+      link: https://grader.gchan.moe/problemset/c1_bkk67_5
+      difficulty: Very Easy
+      source: POSN1
+      topics:
+          - Arrays
+          - Strings
+
+    # TOI Problems
+    - id: toi21_duty_free
+      title: toi21_duty_free
+      link: https://api.otog.in.th/problem/doc/1090
+      difficulty: Hard
+      source: TOI
+      topics:
+          - Disjoint Set Union
+
+    - id: toi20_bit_string
+      title: Bitmask DP & toi20_bit_string
+      link: https://programming.in.th/tasks/toi20_bit_string/
+      difficulty: Easy
+      source: TOI
+      topics:
+          - Dynamic Programming
+          - Bitmask
+
+    - id: toi20_orbs
+      title: toi20_orbs
+      link: https://grader.gchan.moe/problemset/c1_bkk67_1
+      difficulty: Medium
+      source: TOI
+      topics:
+          - Data Structures
