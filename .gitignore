@@ -1,6 +1,6 @@
 .env
 .venv/
 venv/
-/site
+site/
 __pycache__/
 config.sh

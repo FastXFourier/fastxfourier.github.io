@@ -25,6 +25,13 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material
-      - run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
-      - run: mkdocs gh-deploy --force
+      - name: Install Python packages
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install mkdocs==1.6.0 mkdocs-material==9.6.0 pymdown-extensions PyYAML
+      - name: Export project root to PYTHONPATH
+        run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
+      - name: Build and deploy
+        run: |
+          mkdocs build
+          mkdocs gh-deploy --force
