@@ -1,8 +1,8 @@
 ---
-title: jdev_c1_2568_E
+title: jdev_c1_2025_E
 tags: [POSN1, String, Math, Hard]
 ---
-# คำอธิบายวิธีทำพร้อม Code สำหรับข้อ [jdev_c1_2568_E](https://codeforces.com/group/eScIVDG1u2/contest/638328/attachments/download/33732/E%20-%20Derivative.pdf)
+# คำอธิบายวิธีทำพร้อม Code สำหรับข้อ [jdev_c1_2025_E](https://codeforces.com/group/eScIVDG1u2/contest/638328/attachments/download/33732/E%20-%20Derivative.pdf)
 
 ---
 
@@ -82,57 +82,73 @@ $f(x) = −x^3 + 25x − 3$<br>
 
 ## Code: 
 
-```cpp title="toi21_quartet.cpp"
-#include <bits/stdc++.h> 
+```cpp title="jdev_c1_2025_E.cpp"
+#include <bits/stdc++.h>
+using namespace std;
+#define int long long
 
-using namespace std; 
+signed main() {
+    cin.tie(nullptr)->sync_with_stdio(false);
+    string s, ans = "";
+    cin >> s;
 
-#define int long long 
+    if (s.find('x') == string::npos) {
+        cout << 0 << "\n";
+        return 0;
+    }
 
-const int mod = 1e9 + 7; 
-const int N = 1e5 + 5; 
-const int M = 1e5 + 5; 
+    int i = 0;
+    while (i < s.length()) {
+        int sign = 1;
+        if (s[i] == '+' || s[i] == '-') {
+            if (s[i] == '-') sign = -1;
+            i++;
+        }
 
-int n, m, ans, sz[N + M]; 
-vector <int> adj[N + M], cnt[N + M]; 
+        string temp = "";
+        while (i < s.length() && isdigit(s[i])) {
+            temp += s[i];
+            i++;
+        }
 
-void dfs(int u, int p){ 
-	sz[u] = (u <= n); 
-	for (auto v : adj[u]) { 
-		if (v == p) continue; 
-		dfs(v, u); 
-		if (sz[v] > 0) cnt[u].emplace_back(sz[v]), sz[u] += sz[v]; 
-	} 
-	cnt[u].emplace_back(n - sz[u]); 
-} 
+        int coef = (temp.empty() ? 1 : stoi(temp)) * sign;
+        int power = 0;
 
-int32_t main(){ 
-	cin.tie(NULL)->sync_with_stdio(false); 
-	cin >> n >> m; 
-	for (int i = 1; i < n + m; i++) { 
-		int u, v; cin >> u >> v; 
-		adj[u].emplace_back(v); 
-		adj[v].emplace_back(u); 
-	} 
-	dfs(1, 1); 
-	for (int u = n + 1; u <= n + m; u++) { 
-		int siz = adj[u].size(); 
-		if (siz >= 4) { 
-			int dp[siz + 1][5]; 
-			memset(dp, 0, sizeof dp); 
-			dp[0][0] = 1; 
-			for (int i = 1; i <= siz; i++) { 
-				dp[i][0] = 1; 
-				for (int j = 1; j <= 4; j++) { 
-					dp[i][j] = dp[i - 1][j] + (dp[i - 1][j - 1] * cnt[u][i - 1]); 
-				} 
-			} 
-			ans += dp[siz][4]; ans %= mod; 
-		} 
-	} 
-	cout << ans; 
+        if (i < s.length() && s[i] == 'x') {
+            power = 1;
+            i++;
+            if (i < s.length() && s[i] == '^') {
+                i++;
+                string exp = "";
+                while (i < s.length() && isdigit(s[i])) {
+                    exp += s[i];
+                    i++;
+                }
+                power = stoi(exp);
+            }
+        }
+
+        if (power == 0) continue;
+
+        int newCoef = coef * power;
+        int newPow = power - 1;
+
+        if (newCoef > 0) ans += "+";
+        ans += to_string(newCoef);
+
+        if (newPow > 0) {
+            ans += "x";
+            if (newPow > 1) {
+                ans += "^";
+                ans += to_string(newPow);
+            }
+        }
+    }
+
+    if (!ans.empty() && ans[0] == '+') ans.erase(ans.begin());
+    if (ans.empty()) ans = "0";
+
+    cout << ans << "\n";
+    return 0;
 }
 ```
-
-!!! note "Total Time Complexity"
-	$O(n+m)$
