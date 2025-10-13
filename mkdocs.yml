@@ -56,7 +56,7 @@ markdown_extensions:
     - md_in_html
     - tables
     - problems_extension:
-          problems_file: problems.yaml
+        problems_file: problems.yaml
 extra_css:
     - stylesheets/overrides.css
 

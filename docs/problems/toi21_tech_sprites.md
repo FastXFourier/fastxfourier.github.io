@@ -2,7 +2,8 @@
 title: toi21_tech_sprites
 tags: [TOI, DSU, Bruteforce, Medium]
 ---
-# [toi21\_tech\_sprites](https://otog.in.th/problem/1086)
+# คำอธิบายวิธีทำพร้อม Code สำหรับข้อ  [toi21\_tech\_sprites](https://otog.in.th/problem/1086)
+<h3 class="author">Author: Kaopj<h3>
 
 ---
 
@@ -12,14 +13,14 @@ tags: [TOI, DSU, Bruteforce, Medium]
 
 มี Graph หนึ่งที่มีจำนวน node และ edge ดังนี้:
 
-* \$n\$ nodes (บ้านของ Tech-Sprites ที่ \$i\$)
-* \$m\$ edges
+* $n$ nodes (บ้านของ Tech-Sprites ที่ $i$)
+* $m$ edges
 
-แต่ละ node \$i\$ มีค่า 2 ค่า: \$a\[i], b\[i]\$.
+แต่ละ node $i$ มีค่า 2 ค่า: $a[i], b[i]$.
 
-ในแต่ละ connected-component (เซตของ node ที่เชื่อมถึงกัน) ตัว Tech-Sprites จะออกมาตามลำดับ: ก่อนโดยเรียงตามค่า \$a\[i]\$ (ค่าต่ำกว่าก่อน) — ถ้า \$a\$ เท่ากันให้เรียงตาม \$b\$ (b น้อยก่อน)
+ในแต่ละ connected-component (เซตของ node ที่เชื่อมถึงกัน) ตัว Tech-Sprites จะออกมาตามลำดับ: ก่อนโดยเรียงตามค่า $a[i]$ (ค่าต่ำกว่าก่อน) — ถ้า $a$ เท่ากันให้เรียงตาม $b$ (b น้อยก่อน)
 
-เราต้องเพิ่ม edge น้อยที่สุด เพื่อให้เมื่อ Tech-Sprites ออกมาทีละ connected-component แล้ว component ต่างๆ เรียงตาม \$(a,b)\$ ที่ถูกต้องได้ (component ทั้งก้อนจะออกทีละก้อน โดยลำดับการออกของก้อนถูกกำหนดจากค่า \$a\$ แล้ว \$b\$)
+เราต้องเพิ่ม edge น้อยที่สุด เพื่อให้เมื่อ Tech-Sprites ออกมาทีละ connected-component แล้ว component ต่างๆ เรียงตาม $(a,b)$ ที่ถูกต้องได้ (component ทั้งก้อนจะออกทีละก้อน โดยลำดับการออกของก้อนถูกกำหนดจากค่า $a$ แล้ว $b$)
 
 **โจทย์:** หาจำนวน edge ขั้นต่ำที่ต้องเพิ่ม
 
@@ -38,11 +39,11 @@ tags: [TOI, DSU, Bruteforce, Medium]
 ![example3](https://i.ibb.co/rKb6Gbh7/Screenshot-2025-05-27-171026.png)
 
 !!! note "Constraints"
-    \$1 \le n \le 10^6\$
-    \$1 \le m \le 3\cdot 10^6\$
+    $1 \le n \le 10^6$
+    $1 \le m \le 3\cdot 10^6$
   
 !!! note "Prerequisites"
-    - DSU (Disjoint Set Union / Union-Find)
+    - `Disjoint Set Union`
 
 ---
 
@@ -61,7 +62,7 @@ tags: [TOI, DSU, Bruteforce, Medium]
    * ถ้าไม่ใช่ ให้เพิ่ม edge เพื่อเชื่อมตำแหน่ง `i` กับ `i+1` (คือ `unite(i, i+1)`) และเพิ่ม `ans` ขึ้น 1
 6. ทำจนจบแล้ว `ans` คือคำตอบ (จำนวน edge ขั้นต่ำที่ต้องเพิ่ม)
 
-หลักการสั้น ๆ: เราต้องการให้ทุก connected-component หลังจาก sort ตาม \$(a,b)\$ เป็นช่วงติดต่อกัน (contiguous) ในลำดับที่เรียงแล้ว ถ้าช่วงไหนคั่นด้วย node ที่ไม่ได้อยู่ใน component เดียวกัน เราจะแทรก edge เพื่อรวมช่วงให้ต่อเนื่อง — ขั้นต่ำจะเป็นจำนวนครั้งที่เรต้องเชื่อมช่องว่างระหว่างตำแหน่งเรียงที่มี root ต่างกันจนกว่าจะครบขนาดของ component นั้น
+หลักการสั้น ๆ: เราต้องการให้ทุก connected-component หลังจาก sort ตาม $(a,b)$ เป็นช่วงติดต่อกัน (contiguous) ในลำดับที่เรียงแล้ว ถ้าช่วงไหนคั่นด้วย node ที่ไม่ได้อยู่ใน component เดียวกัน เราจะแทรก edge เพื่อรวมช่วงให้ต่อเนื่อง — ขั้นต่ำจะเป็นจำนวนครั้งที่เรต้องเชื่อมช่องว่างระหว่างตำแหน่งเรียงที่มี root ต่างกันจนกว่าจะครบขนาดของ component นั้น
 
 ภาพประกอบ:
 
@@ -95,7 +96,6 @@ void unite(int u, int v){
     u = dsu(u); v = dsu(v);
     if(u == v) return;
     if(sz[u] < sz[v]) swap(u, v);
-    // attach v into u
     par[v] = u;
     sz[u] += sz[v];
     cnt[u] += cnt[v];
@@ -106,76 +106,60 @@ int32_t main(){
     cin.tie(nullptr);
 
     cin >> n >> m;
-    // initialize DSU
     for(int i = 0; i <= n; ++i){
         par[i] = i;
         sz[i] = 1;
         cnt[i] = 0;
     }
 
-    // read nodes' (a,b) and original index
     for(int i = 1; i <= n; ++i){
         int x, y;
         cin >> x >> y;
         a[i] = make_tuple(x, y, i);
     }
 
-    // sort by (a, b)
     sort(a + 1, a + 1 + n);
 
-    // mp[original_index] -> position in sorted array (1..n)
     for(int i = 1; i <= n; ++i){
         int x, y, idx;
         tie(x, y, idx) = a[i];
         mp[idx] = i;
     }
 
-    // read existing edges and unite their positions in the sorted order
     for(int i = 0; i < m; ++i){
         int u, v;
         cin >> u >> v;
         int pu = mp[u];
         int pv = mp[v];
-        // unite positions pu and pv in DSU
         int ru = dsu(pu), rv = dsu(pv);
         if(ru != rv){
-            // union by size
             if(sz[ru] < sz[rv]) swap(ru, rv);
             par[rv] = ru;
             sz[ru] += sz[rv];
         }
     }
 
-    // now we scan positions 1..n to count how many positions belong to each root
-    // and add edges when needed between consecutive positions
     int ans = 0;
     for(int i = 1; i <= n; ++i){
         int r = dsu(i);
-        cnt[r]++; // one more position from root r has appeared in order
-
-        // if we've already seen all positions of this component, nothing to do
+        cnt[r]++;
         if(cnt[r] == sz[r]) continue;
-
-        // otherwise, if next position belongs to different root, we must connect
         if(i + 1 <= n && dsu(i + 1) != r){
-            // connect i and i+1 (we simulate adding an edge that unites their components)
             int ru = dsu(i), rv = dsu(i + 1);
             if(ru != rv){
-                // union by size
                 if(sz[ru] < sz[rv]) swap(ru, rv);
                 par[rv] = ru;
-                // when merging, move cnt and sz properly
                 cnt[ru] += cnt[rv];
                 sz[ru] += sz[rv];
             }
             ans++;
         }
     }
-
+    
     cout << ans << "\n";
     return 0;
 }
 ```
 
 !!! note "Total Time Complexity"
-  โดยรวมประมาณ \$O((n + m),\alpha(n))\$ สำหรับการทำ DSU และการ sort ค่า \$(a,b)\$ จะมีค่า \$O(n\log n)\$ ดังนั้นรวมแล้วเวลาอยู่ในกรอบที่ยอมรับได้สำหรับ \$n \le 10^6, m \le 3\cdot 10^6\$ (ขึ้นกับการจัดการ I/O และ optimization ในโค้ดจริง)
+    $O(n\log n)$

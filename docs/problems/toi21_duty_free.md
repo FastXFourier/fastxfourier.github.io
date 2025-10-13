@@ -2,7 +2,7 @@
 title: toi21_duty_free
 tags: [TOI, Bruteforce, Disjoint Set Union, Hard]
 ---
-# [toi21_duty_free](https://api.otog.in.th/problem/doc/1090)
+# คำอธิบายวิธีทำพร้อม Code สำหรับข้อ [toi21_duty_free](https://api.otog.in.th/problem/doc/1090)
 
 ---
 
@@ -24,7 +24,7 @@ tags: [TOI, Bruteforce, Disjoint Set Union, Hard]
     $1 \leq max\_allowed\_positions[i-1] \leq N$
 
 !!! note "Prerequisites"
-    - DSU (Disjoint Set Union)
+    - `Disjoint Set Union`
 ---
 
 ## Solution
@@ -83,28 +83,28 @@ const int N = 2e6 + 5;
 int i, f, aux[N], par[N];
 
 int dsu(int x){
- if (aux[x] < f) {
-  aux[x] = i;
-  par[x] = x;
- }
- return par[x] = (par[x] == x ? x : dsu(par[x]));
+    if (aux[x] < f) {
+        aux[x] = i;
+        par[x] = x;
+    }
+    return par[x] = (par[x] == x ? x : dsu(par[x]));
 }
 
 int minimum_bag_rearrangement_time(vector<int> max_allowed_positions){
- int n  = max_allowed_positions.size(); 
- f = 1;
- iota(par, par + N, 0);
- memset(aux, -1, sizeof aux);
- int ans = 0;
- for (i = 1; i <= n; i++) {
-  int x = dsu(max_allowed_positions[i - 1]);
-  if (x <= 0) {
-   ans++, f = i;
-   x = dsu(max_allowed_positions[i - 1]);
-  }
-  par[x] = dsu(x - 1);
- }
- return ans;
+    int n  = max_allowed_positions.size(); 
+    f = 1;
+    iota(par, par + N, 0);
+    memset(aux, -1, sizeof aux);
+    int ans = 0;
+    for (i = 1; i <= n; i++) {
+        int x = dsu(max_allowed_positions[i - 1]);
+        if (x <= 0) {
+            ans++, f = i;
+            x = dsu(max_allowed_positions[i - 1]);
+        }
+        par[x] = dsu(x - 1);
+    }
+    return ans;
 }
 ```
 

@@ -2,7 +2,7 @@
 title: toi21_quartet
 tags: [TOI, Bruteforce, DFS, DP, Hard]
 ---
-# [toi21_quartet](https://otog.in.th/problem/1087)
+# คำอธิบายวิธีทำพร้อม Code สำหรับข้อ [toi21_quartet](https://otog.in.th/problem/1087)
 
 ---
 
@@ -20,14 +20,14 @@ tags: [TOI, Bruteforce, DFS, DP, Hard]
 นับจำนวน “กลุ่มอพยพปลอดภัย” โดยให้ระบุคำตอบในรูปแบบของเศษจากการหารจำนวนของ “กลุ่มอพยพปลอดภัย” ด้วย $10^9+7$
 
 !!! note "Constraints"
-	$4 \leq N \leq 10^5$
+	$4 \leq N \leq 10^5$<br>
 	$1 \leq M \leq N-2$ 
 
 !!! note "Prerequisites"
-	- DFS (Depth First Search)
- 	- Dynamic Programming
-  	- Knapsack DP
-   	- DP on Tree
+	- `DFS (Depth First Search)`
+ 	- `Dynamic Programming`
+  	- `Knapsack DP`
+   	- `DP on Tree`
 
 ---
 
@@ -59,9 +59,9 @@ tags: [TOI, Bruteforce, DFS, DP, Hard]
 
 ---
 
-## Code:
+## Code: 
 
-```cpp
+```cpp title="toi21_quartet.cpp"
 #include <bits/stdc++.h> 
 
 using namespace std; 
@@ -115,6 +115,3 @@ int32_t main(){
 
 !!! note "Total Time Complexity"
 	$O(n+m)$
-
-หากมีข้อสงสัย comment ไว้ใต้ post ได้เลยนะครับ 🙇‍♂️🙇‍♂️
-ศึกษาโจทย์เพิ่มเติมได้ที่ Fast X Fourier

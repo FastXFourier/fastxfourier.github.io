@@ -1,4 +1,4 @@
-# Bitmask DP & [toi20_bit_string](https://programming.in.th/tasks/toi20_bit_string/)
+# Tutorial สำหรับ Bitmask DP & คำอธิบายวิธีทำพร้อม Code สำหรับข้อ [toi20_bit_string](https://programming.in.th/tasks/toi20_bit_string/)
 
 ---
 

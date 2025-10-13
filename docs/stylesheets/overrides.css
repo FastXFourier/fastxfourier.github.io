@@ -381,8 +381,54 @@ body[data-md-color-scheme="default"] .md-tabs__link {
     color: #0f1112 !important;
 }
 
+/* Home page centering */
+.home-center {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
 .homelogo {
-    width: 200px;
+    display: block;
+    margin: 0.5rem auto 1rem auto;
+    max-width: 160px;
+    height: auto;
+}
+
+/* Center homepage title, logo and intro text without editing markdown */
+body.md-page-index .md-typeset,
+body.md-page-index .md-main__inner {
+    text-align: center !important;
+}
+
+/* Ensure logo is centered on the homepage */
+body.md-page-index .homelogo {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Make sure the H1 on the homepage is centered and not stretched */
+body.md-page-index .md-typeset h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Extra strong rule to ensure the homepage H1 is centered in all variants */
+body.md-page-index h1,
+.md-page-index h1,
+body.md-page-index .md-typeset > h1,
+.md-page-index .md-typeset > h1 {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.homelogo {
+    width: 250px;
     border-radius: 7px;
     border-style: solid;
     border-color: black;

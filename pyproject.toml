@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastxfourier-site"
+version = "0.1.0"
+description = "Fast X Fourier static site repository"
+authors = [
+  { name = "Fast X Fourier" }
+]
+
