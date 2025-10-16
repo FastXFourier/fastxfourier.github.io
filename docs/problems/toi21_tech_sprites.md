@@ -3,7 +3,6 @@ title: toi21_tech_sprites
 tags: [TOI, DSU, Bruteforce, Medium]
 ---
 # คำอธิบายวิธีทำพร้อม Code สำหรับข้อ  [toi21\_tech\_sprites](https://otog.in.th/problem/1086)
-<h3 class="author">Author: Kaopj<h3>
 
 ---
 
@@ -66,16 +65,16 @@ tags: [TOI, DSU, Bruteforce, Medium]
 
 ภาพประกอบ:
 
-* ภาพ `sorted_array` — array ที่ถูก sort แล้ว:
+* ภาพ array ที่ถูก sort แล้ว:
   ![sorted\_array](https://i.ibb.co/nsX3kZ1B/Screenshot-2025-05-27-172956.png)
-* ภาพ `extra_edges` — ตำแหน่งที่ตรวจแล้วไม่ตรงเงื่อนไข ต้องเพิ่มเส้นเชื่อม:
+* ตำแหน่งที่ตรวจแล้วไม่ตรงเงื่อนไข ต้องเพิ่มเส้นเชื่อม:
   ![extra\_edges](https://i.ibb.co/1fn0K1wq/Screenshot-2025-05-27-174405.png)
 
 ---
 
 ## Code
 
-```cpp
+```cpp title="toi21_tech_sprites"
 #include <bits/stdc++.h>
 using namespace std;
 

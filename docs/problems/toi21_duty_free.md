@@ -110,4 +110,3 @@ int minimum_bag_rearrangement_time(vector<int> max_allowed_positions){
 
 !!! note "Total Time Complexity"  
     $O(N)$
-หากมีข้อสงสัย comment ไว้ใต้ [post](https://www.facebook.com/share/p/171iGYrhtd/) ได้เลยนะครับ 🙇‍♂️🙇‍♂️

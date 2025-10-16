@@ -93,5 +93,3 @@ int main(){
 
 !!! note "Total Time Complexity"  
     $O(N\log N)$
-
-หากมีข้อสงสัย comment ไว้ใต้ [post](https://web.facebook.com/share/p/1BF9b2z7V9/) ได้เลยนะครับ 🙇‍♂️🙇‍♂️  

@@ -46,5 +46,3 @@ int main(){
     return 0;
 }
 ```
-
-หากมีข้อสงสัย comment ไว้ใต้ [post](https://www.facebook.com/share/p/1BWCw366mm/) ได้เลยนะครับ 🙇‍♂️🙇‍♂️  

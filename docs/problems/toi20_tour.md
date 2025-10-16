@@ -58,7 +58,7 @@ tags: [TOI, Divide and Conquer, Geometry, Brute Force, Hard]
 
 ## Code
 
-```cpp
+```cpp title="toi20_tour.cpp"
 #include <bits/stdc++.h> 
 
 #define int long long 
@@ -131,9 +131,7 @@ int32_t main(){
 
 !!! note "Total Time Complexity"
     กำหนดให้ $x=$ จำนวนคู่อันดับ $(F,G)$ ที่หาออกมาได้
+
     - Brute Force: $O(x)$
     - Closest Pair of Points: $O(x\log x)$
-    - Total: $O(x+x\log x)=O(x\log x)$
-
-หากมีข้อสงสัย comment ไว้ใต้ post ได้เลยนะครับ 🙇‍♂️🙇‍♂️
-ศึกษาโจทย์เพิ่มเติมได้ที่ [Fast X Fourier](https://fastxfourier.github.io/Home/)
+    - **Total: $O(x+x\log x)=O(x\log x)$**

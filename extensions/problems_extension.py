@@ -9,7 +9,10 @@ Usage in markdown:
 """
 
 import re
-import yaml
+try:
+    import yaml
+except ImportError:  # pragma: no cover - runtime fallback when PyYAML is not installed
+    yaml = None
 from pathlib import Path
 from markdown.extensions import Extension
 from markdown.preprocessors import Preprocessor
@@ -59,12 +62,19 @@ class ProblemsPreprocessor(Preprocessor):
 
     def _load_problems(self):
         """Load problems from YAML file."""
+        # If PyYAML is not available, don't fail the whole MkDocs build.
+        if yaml is None:
+            print(
+                "Warning: PyYAML is not installed; problems.yaml will not be loaded. Install PyYAML to enable problem list generation."
+            )
+            return []
+
         if not self.problems_file.exists():
             return []
 
         try:
             with open(self.problems_file, "r", encoding="utf-8") as f:
-                data = yaml.safe_load(f)
+                data = yaml.safe_load(f) or {}
                 return data.get("problems", [])
         except Exception as e:
             print(f"Error loading problems.yaml: {e}")

@@ -2,7 +2,7 @@
 title: jdev_c1_2025_E
 tags: [POSN1, String, Math, Hard]
 ---
-# คำอธิบายวิธีทำพร้อม Code สำหรับข้อ [Junior Dev Pre POSN 1: E](https://codeforces.com/group/eScIVDG1u2/contest/638328/attachments/download/33732/E%20-%20Derivative.pdf)
+# คำอธิบายวิธีทำพร้อม Code สำหรับข้อ [jdev_c1_2025_C](https://codeforces.com/group/eScIVDG1u2/contest/638328/attachments/download/33732/E%20-%20Derivative.pdf)
 
 ---
 

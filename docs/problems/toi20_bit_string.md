@@ -154,5 +154,3 @@ int32_t main(){
 
 !!! note "Total Time Complexity"  
     $O(2^N \cdot N)$
-
-หากมีข้อสงสัย comment ไว้ใต้ [post](https://web.facebook.com/share/p/199k1dF8Ld/) ได้เลยนะครับ 🙇‍♂️🙇‍♂️  
