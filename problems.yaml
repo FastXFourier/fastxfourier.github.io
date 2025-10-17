@@ -124,3 +124,12 @@ problems:
       source: TOI
       topics:
           - Data Structures
+
+    - id: toi21_crystal
+      title: toi21_crystal
+      link: https://api.otog.in.th/problem/doc/1089
+      difficulty: Medium
+      source: TOI
+      topics:
+        - Data Structures
+        - Longest Increasing Subsequence

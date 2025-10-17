@@ -38,10 +38,8 @@ tags: [TOI, LIS, Coordinate Compression, Hard]
     $1 \le t[i] \le 10^9$ และไม่มีค่า $t[i]$ ที่ซ้ำกัน
 
 !!! note "Prerequisites"
-    - `LIS (Longest Increasing Subsequence)`
-    - `Fenwick Tree`
-    - `Sweep Line`
-    - `Coordinate Compression`
+    - `Longest Increasing Subsequence`
+    - `Data Structures`
 
 ---
 
