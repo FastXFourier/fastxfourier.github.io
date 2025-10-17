@@ -1,6 +1,5 @@
 ---
 title: toi21_quartet
-tags: [TOI, Bruteforce, DFS, DP, Hard]
 ---
 # คำอธิบายวิธีทำพร้อม Code สำหรับข้อ [toi21_quartet](https://otog.in.th/problem/1087)
 

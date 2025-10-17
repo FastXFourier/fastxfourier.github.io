@@ -1,9 +1,7 @@
 ---
 title: toi20_lover
-tags: [TOI, DP, Hard]
 ---
-
-# คำอธิบายวิธีทำพร้อม Code สำหรับข้อ [toi20_lover](https://otog.in.th/problem/1018)
+# คำอธิบายวิธีทำพร้อม Code สำหรับข้อ [toi20_lover](https://api.otog.in.th/problem/1018)
 
 ---
 
@@ -61,6 +59,7 @@ $$
 
 !!! note "Prerequisites"
     - `Dynamic Programming`
+    - `Prefix Sum`
 
 ---
 

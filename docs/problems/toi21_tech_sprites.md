@@ -1,6 +1,5 @@
 ---
 title: toi21_tech_sprites
-tags: [TOI, DSU, Bruteforce, Medium]
 ---
 # คำอธิบายวิธีทำพร้อม Code สำหรับข้อ  [toi21\_tech\_sprites](https://otog.in.th/problem/1086)
 
@@ -42,6 +41,7 @@ tags: [TOI, DSU, Bruteforce, Medium]
     $1 \le m \le 3\cdot 10^6$
   
 !!! note "Prerequisites"
+    - `Sweep Line`
     - `Disjoint Set Union`
 
 ---

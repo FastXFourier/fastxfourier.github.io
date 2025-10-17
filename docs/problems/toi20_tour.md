@@ -1,8 +1,7 @@
 ---
 title: toi20_tour
-tags: [TOI, Divide and Conquer, Geometry, Brute Force, Hard]
 ---
-# คำอธิบายวิธีทำพร้อม code สำหรับข้อ [toi20_tour](https://api.otog.in.th/problem/doc/1017)
+# คำอธิบายวิธีทำพร้อม code สำหรับข้อ [toi20_tour](https://api.otog.in.th/problem/1017)
 
 ---
 
@@ -34,7 +33,7 @@ tags: [TOI, Divide and Conquer, Geometry, Brute Force, Hard]
       
 
 !!! note "Prerequisites"
-    - `Closest pair of points Algorithm`
+    - `Divide and Conquer`
 
 ---
 

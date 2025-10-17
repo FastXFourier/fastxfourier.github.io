@@ -1,3 +1,6 @@
+---
+title: toi20_orbs
+---
 # คำอธิบายวิธีทำพร้อม Code สำหรับข้อ [toi20_orbs](https://programming.in.th/tasks/toi20_orbs/)
 
 ---
