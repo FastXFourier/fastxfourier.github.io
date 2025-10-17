@@ -133,6 +133,7 @@ problems:
       topics:
         - Data Structures
         - Longest Increasing Subsequence
+        - Dynamic Programming
 
     - id: toi20_lover
       title: toi20_lover
@@ -146,7 +147,7 @@ problems:
     - id: toi20_tour
       title: toi20_tour
       link: https://api.otog.in.th/problem/doc/1017
-      difficulty: Medium
+      difficulty: Hard
       source: TOI
       topics:
         - Brute Force
@@ -159,12 +160,13 @@ problems:
       source: TOI
       topics:
         - Dynamic Programming
+        - DP on Tree
         - DFS/BFS
     
     - id: toi21_tech_sprites
       title: toi21_tech_sprites
       link: https://api.otog.in.th/problem/doc/1086
-      difficulty: Medium
+      difficulty: Easy
       source: TOI
       topics:
         - Sweep Line
