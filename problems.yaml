@@ -119,7 +119,7 @@ problems:
 
     - id: toi20_orbs
       title: toi20_orbs
-      link: https://grader.gchan.moe/problemset/c1_bkk67_1
+      link: https://programming.in.th/tasks/toi20_orbs
       difficulty: Medium
       source: TOI
       topics:
