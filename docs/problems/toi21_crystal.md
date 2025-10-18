@@ -39,6 +39,7 @@ title: toi21_crystal
 !!! note "Prerequisites"
     - `Longest Increasing Subsequence`
     - `Data Structures`
+    - `Dynamic Programming`
 
 ---
 

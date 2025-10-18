@@ -33,6 +33,7 @@ title: toi20_tour
       
 
 !!! note "Prerequisites"
+	- `Brute Force`
     - `Divide and Conquer`
 
 ---

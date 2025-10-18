@@ -23,9 +23,8 @@ title: toi21_quartet
 	$1 \leq M \leq N-2$ 
 
 !!! note "Prerequisites"
-	- `DFS (Depth First Search)`
+	- `DFS/BFS`
  	- `Dynamic Programming`
-  	- `Knapsack DP`
    	- `DP on Tree`
 
 ---
