@@ -1,11 +1,14 @@
 {
-    "python.analysis.typeCheckingMode": "basic",
-    "files.insertFinalNewline": true,
-    "editor.formatOnSave": true,
-    "[python]": {
-        "editor.defaultFormatter": "charliermarsh.ruff"
-    },
-    "[markdown]": {
-        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-    }
+  "python.analysis.typeCheckingMode": "basic",
+  "files.insertFinalNewline": true,
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "files.associations": {
+    "iostream": "cpp"
+  }
 }
