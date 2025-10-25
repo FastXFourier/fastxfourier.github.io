@@ -15,14 +15,15 @@ title: c2_kmutt_66_heroes
 หาจำนวนเหรียญที่มากที่สุดที่ฮีโร่แต่ละคนสามารถได้จากการสู้กับมอนสเตอร์
 
 !!! note "Constraints"
-    $1 \leq N \leq 2 * 10^5$<br>
-    $1 \leq M \leq 8 * 10^5$<br>
+    $1 \leq N \leq 2 \cdot 10^5$<br>
+    $1 \leq M \leq 8 \cdot 10^5$<br>
     $1 \leq H_i \leq 10^9$<br>
     $1 \leq P_i \leq 10^9$<br>
     $0 \leq C_i \leq 10^9$
 
 !!! note "Prerequisites"
-	  - `Math`
+    - `Prefix Sum`
+    - `Binary Search`
 
 ---
 
@@ -48,7 +49,7 @@ title: c2_kmutt_66_heroes
 
 ## Code: 
 
-```cpp title="jdev_c1_2025_E.cpp"
+```cpp title="c2_kmutt_66_heroes.cpp"
 #include <bits/stdc++.h>
 #define int long long
 using namespace std;
@@ -98,3 +99,8 @@ int32_t main() {
 }
 
 ```
+!!! note "Total Time Complexity"
+	$O((m + n) \log m)$
+
+    - $m \log m$ มาจากการเรียงพลังและเหรียญของมอนสเตอร์
+    - $n \log m$ มาจากการคำนวณจำนวนเหรียญที่มากที่สุดที่ฮีโร่แต่ละคนสามารถได้จากการตีมอนสเตอร์ตอนท้าย
