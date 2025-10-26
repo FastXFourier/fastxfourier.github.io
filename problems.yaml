@@ -11,6 +11,16 @@
 #     solution: Path to solution page (optional, defaults to /problems/{id})
 
 problems:
+    # POSN2 KMUTT 2566
+    # - id: c2_kmutt_66_heroes
+    #   title: ข้อสอบท้ายค่าย 2 ปีการศึกษา 2566 ศูนย์ สอวน. มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี ข้อ Heroes
+    #   link: https://grader.gchan.moe/problemset/c2_st66_heroes
+    #   difficulty: Easy
+    #   source: POSN2
+    #   topics: 
+    #     - Binary Search
+    #     - Prefix Sum
+
     # POSN1 2566 Problems
     - id: posn1_66_bkk_p1
       title: ข้อสอบท้ายค่าย 1 ศูนย์ สอวน.กรุงเทพมหานคร ปี 2566 ข้อที่ 1

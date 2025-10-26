@@ -1,7 +1,7 @@
 ---
 title: c2_kmutt_66_heroes
 ---
-# ข้อสอบท้ายค่าย 2 ปีการศึกษา 2566 ศูนย์ สอวน. มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี ข้อ [Heroes](https://grader.gchan.moe/problemset/c2_st66_heroes/statement)
+# ข้อสอบท้ายค่าย 2 ปีการศึกษา 2566 ศูนย์ สอวน. มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี ข้อ [Heroes](https://grader.gchan.moe/problemset/c2_st66_heroes/)
 ---
 ### Author: Nagorn Phongphasura
 ---
