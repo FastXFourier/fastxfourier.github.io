@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://fastxfourier.github.io/sitemap.xml
