@@ -444,3 +444,9 @@ body.slate .homelogo:hover {
     box-shadow: 0 8px 16px rgb(255, 255, 255);
     transition-duration: 400ms;
 }
+
+.floodfill {
+    display: flex;
+    justify-self: center;
+    width: 90%
+}
