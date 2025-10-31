@@ -49,7 +49,6 @@ title: c2_kmutt_66_justify
 using namespace std;
 
 int32_t main() {
-	cin.tie(NULL)->sync_with_stdio(false);
 	// input
 	int N,M;
 	cin >> N >> M;
@@ -64,32 +63,35 @@ int32_t main() {
 		} else {
 			cnt+=W[i].size()+1;
 		}
-		if (cnt>=M) {
-		  if (w.size()==1) {
-		    cout << w[0];
-		  } else {
-		    int charcnt=0;
-  			for (auto j:w) {
-  				charcnt+=j.size()+1;
-  			}
-  			charcnt-=1;
-  			int c=M-charcnt;
-  			int c_0=c%(w.size()-1);
-  			cnt=0;
-  			for (auto j:w) {
-  				cout << j;
-  				if (cnt!=w.size()-1) {
-  					for (int p=0;p<c/(w.size()-1)+(cnt<c_0)+1;p++) {
-  						cout << " ";
-  					}
-  				}
-  				cnt++;
-  			}
-		  }
+		if (cnt>M) {
+            if (w.size()==1) {
+                cout << w[0];
+                cnt=W[i].size();
+                w.clear();
+                w.push_back(W[i]);
+            } else {
+                int charcnt=0;
+                for (auto j:w) {
+                    charcnt+=j.size()+1;
+                }
+                charcnt-=1;
+                int c=M-charcnt;
+                int c_0=c%(w.size()-1);
+                cnt=0;
+                for (auto j:w) {
+                    cout << j;
+                    if (cnt!=w.size()-1) {
+                        for (int p=0;p<c/(w.size()-1)+(cnt<c_0)+1;p++) {
+                            cout << " ";
+                        }
+                    }
+                    cnt++;
+                }
+                cnt=W[i].size();
+                w.clear();
+                w.push_back(W[i]);
+            }
 			cout << '\n';
-			cnt=W[i].size();
-			w.clear();
-			w.push_back(W[i]);
 		} else {
 			w.push_back(W[i]);
 		}
