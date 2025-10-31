@@ -181,3 +181,11 @@ problems:
       topics:
         - Sweep Line
         - Disjoint Set Union
+
+    # - id: c2_kmutt_66_justify
+    #   title: c2_kmutt_66_justify
+    #   link: https://grader.gchan.moe/problemset/c2_st66_justify
+    #   difficulty: Hard
+    #   source: POSN2
+    #   topics:
+    #     - String
