@@ -11,7 +11,15 @@
 #     solution: Path to solution page (optional, defaults to /problems/{id})
 
 problems:
-    # POSN2 KMUTT 2566
+
+    # POSN2 KMUTT 66
+    # - id: c2_kmutt_66_justify
+    #   title: ข้อสอบท้ายค่าย 2 ปีการศึกษา 2566 ศูนย์ สอวน. มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี ข้อ Justify
+    #   link: https://grader.gchan.moe/problemset/c2_st66_justify
+    #   difficulty: Hard
+    #   source: POSN2
+    #   topics:
+    #     - String
     # - id: c2_kmutt_66_heroes
     #   title: ข้อสอบท้ายค่าย 2 ปีการศึกษา 2566 ศูนย์ สอวน. มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี ข้อ Heroes
     #   link: https://grader.gchan.moe/problemset/c2_st66_heroes
@@ -20,6 +28,34 @@ problems:
     #   topics: 
     #     - Binary Search
     #     - Prefix Sum
+    # - id: c2_kmutt_66_freeday
+    #   title: ข้อสอบท้ายค่าย 2 ปีการศึกษา 2566 ศูนย์ สอวน. มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี ข้อ FreeDay
+    #   link: https://grader.gchan.moe/problemset/c2_st66_freeday
+    #   difficulty: Easy
+    #   source: POSN2
+    #   topics: 
+    #     - Sweep Line
+    # - id: c2_kmutt_66_intersection
+    #   title: ข้อสอบท้ายค่าย 2 ปีการศึกษา 2566 ศูนย์ สอวน. มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี ข้อ Intersection
+    #   link: https://grader.gchan.moe/problemset/c2_st66_intersection
+    #   difficulty: Easy
+    #   source: POSN2
+    #   topics: 
+    #     - Sweep Line
+    # - id: c2_kmutt_66_largest_island
+    #   title: ข้อสอบท้ายค่าย 2 ปีการศึกษา 2566 ศูนย์ สอวน. มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี ข้อ Largest Island
+    #   link: https://grader.gchan.moe/problemset/c2_st66_largest_island
+    #   difficulty: Easy
+    #   source: POSN2
+    #   topics: 
+    #     - DFS/BFS
+    # - id: c2_kmutt_66_stock
+    #   title: ข้อสอบท้ายค่าย 2 ปีการศึกษา 2566 ศูนย์ สอวน. มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี ข้อ Stock
+    #   link: https://grader.gchan.moe/problemset/c2_st66_stock
+    #   difficulty: Easy
+    #   source: POSN2
+    #   topics: 
+    #     - Math
 
     # POSN1 2566 Problems
     - id: posn1_66_bkk_p1
@@ -181,11 +217,3 @@ problems:
       topics:
         - Sweep Line
         - Disjoint Set Union
-
-    # - id: c2_kmutt_66_justify
-    #   title: c2_kmutt_66_justify
-    #   link: https://grader.gchan.moe/problemset/c2_st66_justify
-    #   difficulty: Hard
-    #   source: POSN2
-    #   topics:
-    #     - String
