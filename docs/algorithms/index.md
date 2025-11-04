@@ -25,6 +25,7 @@ hide: navigation, toc
   <label><input type="checkbox" value="Graph" class="tag"> Graph Algorithms</label>
   <label><input type="checkbox" value="Dynamic Programming" class="tag"> Dynamic Programming</label>
   <label><input type="checkbox" value="Data Structures" class="tag"> Data Structures</label>
+  <label><input type="checkbox" value="Others" class="tag"> Others</label>
 </div>
 
 <!-- Problems grid -->
@@ -38,6 +39,16 @@ hide: navigation, toc
     - `Dynamic Programming`
 
 [View Solution](/problems/toi20_bit_string)
+</div>
+
+<div class="problem-card" data-difficulty="Easy" data-topics="Others" markdown="1">
+### Sweep Line
+
+!!! success "**Difficulty**: `Easy`"
+??? Topics
+    - `Others`
+
+[View Solution](/problems/c2_kmutt_66_intersection)
 </div>
 
 </div>
