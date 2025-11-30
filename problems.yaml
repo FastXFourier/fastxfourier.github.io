@@ -220,7 +220,7 @@ problems:
 
     - id: toi13_cats
       title: toi13_cats
-      link: https://api.otog.in.th/problem/doc/471
+      link: https://programming.in.th/tasks/toi13_cats
       difficulty: Easy
       source: TOI
       topics:
