@@ -12,6 +12,15 @@
 
 problems:
 
+    - id: toi13_cats
+      title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติครั้งที่ 13 ข้อ toi13_cats
+      link: https://programming.in.th/tasks/toi13_cats
+      difficulty: Easy
+      source: TOI
+      topics:
+        - Brute Force
+        - Binary Search
+
     # POSN2 KMUTT 66
     - id: c2_kmutt_66_justify
       title: ข้อสอบท้ายค่าย 2 ปีการศึกษา 2566 ศูนย์ สอวน. มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี ข้อ Justify
@@ -147,7 +156,7 @@ problems:
 
     # TOI Problems
     - id: toi21_duty_free
-      title: toi21_duty_free
+      title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติครั้งที่ 21 ข้อ toi21_duty_free
       link: https://api.otog.in.th/problem/doc/1090
       difficulty: Hard
       source: TOI
@@ -155,7 +164,7 @@ problems:
           - Disjoint Set Union
 
     - id: toi20_bit_string
-      title: Bitmask DP & toi20_bit_string
+      title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติครั้งที่ 20 ข้อ toi20_bit_string
       link: https://programming.in.th/tasks/toi20_bit_string/
       difficulty: Easy
       source: TOI
@@ -164,7 +173,7 @@ problems:
           - Bitmask
 
     - id: toi20_orbs
-      title: toi20_orbs
+      title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติครั้งที่ 20 ข้อ toi20_orbs
       link: https://programming.in.th/tasks/toi20_orbs
       difficulty: Medium
       source: TOI
@@ -172,7 +181,7 @@ problems:
           - Data Structures
 
     - id: toi21_crystal
-      title: toi21_crystal
+      title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติครั้งที่ 21 ข้อ toi21_crystal
       link: https://api.otog.in.th/problem/doc/1089
       difficulty: Medium
       source: TOI
@@ -182,7 +191,7 @@ problems:
         - Dynamic Programming
 
     - id: toi20_lover
-      title: toi20_lover
+      title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติครั้งที่ 20 ข้อ toi20_lover
       link: https://api.otog.in.th/problem/doc/1018
       difficulty: Medium
       source: TOI
@@ -191,7 +200,7 @@ problems:
         - Prefix Sum
     
     - id: toi20_tour
-      title: toi20_tour
+      title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติครั้งที่ 20 ข้อ toi20_tour
       link: https://api.otog.in.th/problem/doc/1017
       difficulty: Hard
       source: TOI
@@ -200,7 +209,7 @@ problems:
         - Divide and Conquer
     
     - id: toi21_quartet
-      title: toi21_quartet
+      title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติครั้งที่ 21 ข้อ toi21_quartet
       link: https://api.otog.in.th/problem/doc/1087
       difficulty: Medium
       source: TOI
@@ -210,19 +219,10 @@ problems:
         - DFS/BFS
     
     - id: toi21_tech_sprites
-      title: toi21_tech_sprites
+      title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติครั้งที่ 21 ข้อ toi21_tech_sprites
       link: https://api.otog.in.th/problem/doc/1086
       difficulty: Easy
       source: TOI
       topics:
         - Sweep Line
         - Disjoint Set Union
-
-    - id: toi13_cats
-      title: toi13_cats
-      link: https://programming.in.th/tasks/toi13_cats
-      difficulty: Easy
-      source: TOI
-      topics:
-        - Brute Force
-        - Binary Search
