@@ -1,6 +1,9 @@
 site_name: Fast X Fourier
 site_url: https://fastxfourier.github.io/
 
+repo_url: https://github.com/FastXFourier/fastxfourier.github.io
+repo_name: FastXFourier/fastxfourier.github.io
+
 nav:
     - Home: index.md
     - Algorithms: algorithms/index.md
