@@ -217,3 +217,12 @@ problems:
       topics:
         - Sweep Line
         - Disjoint Set Union
+
+    - id: toi13_cats
+      title: toi13_cats
+      link: https://api.otog.in.th/problem/doc/471
+      difficulty: Easy
+      source: TOI
+      topics:
+        - Brute Force
+        - Binary Search
