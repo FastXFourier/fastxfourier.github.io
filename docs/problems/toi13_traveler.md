@@ -70,19 +70,19 @@ title: TOI13_Traveler
 ```cpp title="Dijkstra's Algorithm"
 // Dijsktra's Algorithm
 // 1. เตรียมตัวแปรต่างๆ
-priority_queue <pii, vector <pii>, greater <pii>> q;
+priority_queue <pii, vector <pii>, greater <pii>> pq; // การประกาศ priority_queue แบบ min_heap ซึ่งจะเรียงจากน้อยไปมากแทนที่จะเป็นมากไปน้อย
 vector <int> dis(n, inf);
 // 2. ตั้งค่า
 dis[x] = 0;
-q.emplace(0, x);
+pq.emplace(0, x);
 // 3. ดำเนินการทำงาน
-while (!q.empty()) {
-    auto [w, u] = q.top(); // ดึงค่าด้านบน {ระยะทางรวม, เมืองปัจจุบัน}
-    q.pop(); // แล้วลบออก
+while (!pq.empty()) {
+    auto [w, u] = pq.top(); // ดึงค่าด้านบน {ระยะทางรวม, เมืองปัจจุบัน}
+    pq.pop(); // แล้วลบออก
     for (auto [ww, v] : adj[u]) {
         if (w + ww >= dis[v]) continue; // ตรวจสอบว่า ระยะทางรวม + เส้นทางใหม่ สั้นกว่าระยะทางที่สั้นที่สุดที่เคยเจอหรือไม่
         // ถ้าสั้นกว่า ก็ดำเนินการใส่ระยะใหม่ใน pq และอัปเดตค่าใน dis
-        q.emplace(w + ww, v);
+        pq.emplace(w + ww, v);
         dis[v] = w + ww;
     }
 }
