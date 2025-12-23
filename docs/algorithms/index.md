@@ -30,6 +30,15 @@ hide: navigation, toc
 
 <!-- Problems grid -->
 <div class="grid cards" markdown="1">
+<div class="problem-card" data-difficulty="Easy" data-topics="Graph Algorithms" markdown="1">
+### Dijkstra's Algorithm
+
+!!! success "**Difficulty**: `Easy`"
+??? Topics
+    - `Graph Algorithms`
+
+[View Tutorial](/problems/toi13_traveler)
+</div>
 
 <div class="problem-card" data-difficulty="Hard" data-topics="Dynamic Programming" markdown="1">
 ### Bitmask DP
@@ -38,7 +47,7 @@ hide: navigation, toc
 ??? Topics
     - `Dynamic Programming`
 
-[View Solution](/problems/toi20_bit_string)
+[View Tutorial](/problems/toi20_bit_string)
 </div>
 
 <div class="problem-card" data-difficulty="Easy" data-topics="Others" markdown="1">
@@ -48,7 +57,7 @@ hide: navigation, toc
 ??? Topics
     - `Others`
 
-[View Solution](/problems/c2_kmutt_66_intersection)
+[View Tutorial](/problems/c2_kmutt_66_intersection)
 </div>
 
 </div>
