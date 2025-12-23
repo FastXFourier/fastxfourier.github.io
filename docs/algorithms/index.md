@@ -30,7 +30,7 @@ hide: navigation, toc
 
 <!-- Problems grid -->
 <div class="grid cards" markdown="1">
-<div class="problem-card" data-difficulty="Easy" data-topics="Graph Algorithms" markdown="1">
+<div class="problem-card" data-difficulty="Easy" data-topics="Graph" markdown="1">
 ### Dijkstra's Algorithm
 
 !!! success "**Difficulty**: `Easy`"
