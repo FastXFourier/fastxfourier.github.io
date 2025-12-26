@@ -18,7 +18,7 @@ problems:
       source: TOI
       topics: 
         - Shortest Paths
-        - STL
+        - STL Basics
 
     - id: toi13_cats
       title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 13 ข้อ toi13_cats
