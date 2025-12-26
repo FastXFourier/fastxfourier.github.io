@@ -16,7 +16,9 @@ problems:
       link: https://programming.in.th/tasks/toi13_traveler
       difficulty: Easy
       source: TOI
-      topics: Shortest Paths
+      topics: 
+        - Shortest Paths
+        - STL
 
     - id: toi13_cats
       title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 13 ข้อ toi13_cats
