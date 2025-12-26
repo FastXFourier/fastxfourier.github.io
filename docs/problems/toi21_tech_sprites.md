@@ -1,5 +1,5 @@
 ---
-title: toi21_tech_sprites
+title: TOI21_Tech_Sprites
 ---
 # คำอธิบายวิธีทำพร้อม Code สำหรับข้อ  [toi21\_tech\_sprites](https://otog.in.th/problem/1086)
 

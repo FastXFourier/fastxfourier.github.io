@@ -1,5 +1,5 @@
 ---
-title: toi21_duty_free
+title: TOI21_Duty_Free
 tags: [TOI, Bruteforce, Disjoint Set Union, Hard]
 ---
 # คำอธิบายวิธีทำพร้อม Code สำหรับข้อ [toi21_duty_free](https://api.otog.in.th/problem/doc/1090)

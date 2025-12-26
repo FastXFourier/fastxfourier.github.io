@@ -1,5 +1,5 @@
 ---
-title: toi13_cats
+title: TOI13_Cats
 ---
 # คำอธิบายวิธีทำพร้อม code สำหรับข้อ [toi13_cats](https://programming.in.th/tasks/toi13_cats)
 ---

@@ -1,5 +1,5 @@
 ---
-title: toi21_quartet
+title: TOI21_Quartet
 ---
 # คำอธิบายวิธีทำพร้อม Code สำหรับข้อ [toi21_quartet](https://otog.in.th/problem/1087)
 

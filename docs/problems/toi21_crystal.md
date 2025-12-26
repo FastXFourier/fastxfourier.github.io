@@ -1,5 +1,5 @@
 ---
-title: toi21_crystal
+title: TOI21_Crystal
 ---
 # คำอธิบายวิธีทำพร้อม Code สำหรับข้อ [toi21_crystal](https://otog.in.th/problem/1089)
 

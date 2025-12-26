@@ -1,5 +1,5 @@
 ---
-title: toi20_lover
+title: TOI20_Lover
 ---
 # คำอธิบายวิธีทำพร้อม Code สำหรับข้อ [toi20_lover](https://api.otog.in.th/problem/1018)
 

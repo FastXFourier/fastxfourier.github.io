@@ -1,5 +1,5 @@
 ---
-title: toi20_tour
+title: TOI20_Tour
 ---
 # คำอธิบายวิธีทำพร้อม code สำหรับข้อ [toi20_tour](https://api.otog.in.th/problem/1017)
 

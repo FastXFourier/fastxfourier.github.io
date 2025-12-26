@@ -1,5 +1,5 @@
 ---
-title: toi20_orbs
+title: TOI20_Orbs
 ---
 # คำอธิบายวิธีทำพร้อม Code สำหรับข้อ [toi20_orbs](https://programming.in.th/tasks/toi20_orbs/)
 
