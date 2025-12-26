@@ -41,6 +41,7 @@ title: TOI13_Traveler
     $1 \leq d_i \leq 10^4$ (ระยะทางของรถไฟฟ้าความเร็วสูงเส้นทางที่ $i$)<br>
 
 !!! note "Prerequisites"
+    - `STL Basics`
     - `Shortest Paths`
 
 ---
@@ -69,7 +70,7 @@ title: TOI13_Traveler
 **หลักการทำงานของ Dijkstra's Algorithm** จะอาศัยความ Greedy (เลือกวิธีที่ดีที่สุด ณ การเดิน เมื่ออยู่ที่เมืองใดเมืองหนึ่ง) มาประยุกต์ โดยขั้นตอนการทำงานจะเป็นดังนี้
 
 1. **สร้างตัวแปรเก็บค่าที่จำเป็น**: ได้แก่
-    - `priority_queue (min heap)` เก็บ `pair <int, nt>` $pq$ เป็น Data Structure ที่สามารถเก็บค่าเข้าไป และดึงค่าที่ต่ำ/สูงที่สุดออกมาได้ ซึ่งใช้เวลาเพียง $O(log$ $N)$ (นั่นคือ เราสามารถใส่ของเข้าไปเยอะๆ เป็นชนิดใดก็ได้ $(int, string, char, pair)$ โดยตัว `priority_queue` จะทำการจัดเรียงให้ แล้วเมื่อเรียก `pq.top()` ตัว `priority_queue` จะคืนค่ามาเป็น**ค่าน้อยสุด/ค่าสูงสุด**ที่เราเก็บเข้าไป ตามที่เราตั้งไว้ ในที่นี้ เราจะทำให้ $pq$ คืนค่าต่ำสุดมา) (อ่านเพิ่มเติมได้[ที่นี่](https://en.cppreference.com/w/cpp/container/priority_queue.html)) โดยข้อมูลแต่ละตัวใน $pq$ จะเก็บเป็น $pair$ โดยจะเก็บค่าเป็น \{**ระยะถึงเมืองที่เก็บ, เมืองดังกล่าว**\} ซึ่งจากสมบัติของ `priority_queue` ที่จะเรียงค่าให้จากน้อยไปมาก จะทำให้ค่าที่ดึงออกมาเป็นระยะที่สั้นที่สุดเสมอ
+    - `priority_queue (min heap)` เก็บ `pair <int, int>` $pq$ เป็น Data Structure ที่สามารถเก็บค่าเข้าไป และดึงค่าที่ต่ำ/สูงที่สุดออกมาได้ ซึ่งใช้เวลาเพียง $O(log$ $N)$ (นั่นคือ เราสามารถใส่ของเข้าไปเยอะๆ เป็นชนิดใดก็ได้ $(int, string, char, pair)$ โดยตัว `priority_queue` จะทำการจัดเรียงให้ แล้วเมื่อเรียก `pq.top()` ตัว `priority_queue` จะคืนค่ามาเป็น**ค่าน้อยสุด/ค่าสูงสุด**ที่เราเก็บเข้าไป ตามที่เราตั้งไว้ ในที่นี้ เราจะทำให้ $pq$ คืนค่าต่ำสุดมา) (อ่านเพิ่มเติมได้[ที่นี่](https://en.cppreference.com/w/cpp/container/priority_queue.html)) โดยข้อมูลแต่ละตัวใน $pq$ จะเก็บเป็น $pair$ โดยจะเก็บค่าเป็น \{**ระยะถึงเมืองที่เก็บ, เมืองดังกล่าว**\} ซึ่งจากสมบัติของ `priority_queue` ที่จะเรียงค่าให้จากน้อยไปมาก จะทำให้ค่าที่ดึงออกมาเป็นระยะที่สั้นที่สุดเสมอ
     - `array` $dis$ ทำหน้าที่คอยเก็บระยะที่สั้นที่สุดจาก node เริ่มต้นไปยัง node ใดๆ เริ่มต้นโดยการตั้งระยะทุกค่าเป็นค่าสูงๆ (เนื่องจากจะสมมติว่า ยังไม่สามารถเดินทางไปยัง node ใดๆ)
 2. **ตั้งค่า**: ใส่ค่าใน $pq$ เป็น \{$0, X(เมืองเริ่มต้น)$\} แล้วตั้งค่าใน $dis[X]$ เป็น 0 (เนื่องจากระยะทางที่สั้นที่สุดจาก $X$ ไปยัง $X$ เท่ากับ 0)
 3. **เริ่มดำเนินการทำงาน**: 
@@ -83,7 +84,7 @@ title: TOI13_Traveler
 ```cpp title="Dijkstra's Algorithm"
 // Dijsktra's Algorithm
 // 1. เตรียมตัวแปรต่างๆ
-priority_queue <pii, vector <pii>, greater <pii>> pq; // การประกาศ priority_queue แบบ min_heap ซึ่งจะเรียงจากน้อยไปมากแทนที่จะเป็นมากไปน้อย
+priority_queue <pair <int, int>, vector <pair <int, int>>, greater <pair <int, int>>> pq; // การประกาศ priority_queue แบบ min_heap ซึ่งจะเรียงจากน้อยไปมากแทนที่จะเป็นมากไปน้อย
 vector <int> dis(n, inf);
 // 2. ตั้งค่า
 dis[x] = 0;
@@ -128,7 +129,7 @@ int32_t main(){
     // input
     int n, m, x, y, z;
     cin >> n >> m >> x >> y >> z;
-    vector <pii> adj[n];
+    vector <pair <int, int>> adj[n];
     for(int i = 0; i < m; i++){
         int a, b, c;
         cin >> a >> b >> c;
@@ -136,7 +137,7 @@ int32_t main(){
         adj[b].emplace_back(c, a);
     }
 
-    priority_queue <pii, vector <pii>, greater <pii>> q;
+    priority_queue <pair <int, int>, vector <pair <int, int>>, greater <pair <int, int>>> q;
 
     // Dijkstra's Algorithm on X
     vector <int> dis_x(n, inf);
