@@ -1,0 +1,112 @@
+/* Roadmap styles for docs/guide/index.md */
+.roadmap { 
+    max-width:900px; 
+    margin:1.5rem auto; 
+    display:flex; 
+    gap:1.25rem; 
+    align-items:flex-start; 
+}
+
+.road-column { 
+    flex:0 0 80px; 
+}
+
+.steps { 
+    flex:1; 
+    display:flex; 
+    flex-direction:column; 
+    gap:1rem; 
+    position:relative; 
+
+}
+.steps::before { 
+    content:''; 
+    position:absolute; 
+    left:28px; 
+    top:12px; 
+    bottom:12px; 
+    width:24px; 
+    border-radius:16px; 
+    background: var(--md-primary-fg-color); 
+    z-index:1; 
+}
+
+.step { 
+    display:grid; 
+    grid-template-columns:80px 1fr; 
+    gap:1rem; 
+    align-items:center; 
+}
+
+.marker { 
+    width:80px; 
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+    position:relative;
+    z-index:2; 
+}
+
+.circle { 
+    width:36px; 
+    height:36px; 
+    border-radius:50%; 
+    background:#0d6efd; 
+    color:#fff; 
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+    font-weight:600; 
+    box-shadow:0 2px 6px rgba(0,0,0,0.08); 
+    position:relative; 
+    z-index:3 
+}
+
+.content { 
+    background: var(--md-default-bg-color);; 
+    padding:0.85rem; 
+    border-radius:8px; 
+    border:1px solid #969696; 
+}
+
+.content h3 { 
+    margin:0 0 0.35rem 0; 
+    font-size:1rem 
+}
+
+.muted { 
+    color:var(--md-secondary-fg-color); 
+    font-size:0.9rem 
+}
+
+.content, .circle { 
+    transition: box-shadow 180ms ease, transform 180ms ease, background-color 180ms ease, border-color 180ms ease; 
+}
+.step:hover .content { 
+    box-shadow: 2px 2px 2px var(--md-primary-bg-color); 
+    transform: translateY(-4px); 
+    border-color: var(--md-secondary-bg-color); 
+}
+.step:hover .circle { 
+    background-color: #00b62d; 
+    color: #fff; 
+    transform: translateY(-2px); 
+}
+
+/* Inverted guide bar colors: light mode -> dark bar, dark mode -> light bar */
+@media (prefers-color-scheme: light) {
+    .steps::before { background: rgb(45,45,45) !important; }
+}
+body[data-md-color-scheme="default"] .steps::before {
+    background: rgb(45, 45, 45) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    .steps::before { background: rgba(255,255,255,0.08) !important; }
+}
+body[data-md-color-scheme="slate"] .steps::before,
+body[data-md-color-scheme="dark"] .steps::before {
+    background: rgb(204, 204, 204) !important;
+}
+
+

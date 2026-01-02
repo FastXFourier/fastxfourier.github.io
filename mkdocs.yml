@@ -33,7 +33,7 @@ theme:
           toggle:
               icon: material/lightbulb-on-10
               name: Switch to dark mode
-          primary: white
+          primary: black
           accent: deep purple
 
 extra_javascript:
