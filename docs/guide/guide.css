@@ -115,13 +115,13 @@ body[data-md-color-scheme="dark"] .steps::before {
         max-width: none;
         width: 100%;
         margin: 1rem 0; /* remove auto centering */
-        padding-left: 0.1rem; /* tighten inset from viewport edge */
+        padding-left: 0; /* flush to viewport edge */
         box-sizing: border-box;
         gap: 0.75rem;
     }
 
     .road-column {
-        flex: 0 0 40px;
+        flex: 0 0 32px;
     }
 
     .steps {
@@ -129,21 +129,21 @@ body[data-md-color-scheme="dark"] .steps::before {
     }
 
     .steps::before {
-        left:10px; /* move the guide bar closer to left edge */
+        left:2px; /* move the guide bar even closer to left edge */
     }
 
     .step { 
-        grid-template-columns:40px 1fr; 
+        grid-template-columns:32px 1fr; 
     }
 
     .marker { 
-        width:40px; 
+        width:32px; 
     }
 
     .circle { 
-        width:20px; 
-        height:20px; 
-        font-size:0.75rem;
+        width:16px; 
+        height:16px; 
+        font-size:0.68rem;
     }
 }
 
