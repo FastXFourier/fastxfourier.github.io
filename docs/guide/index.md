@@ -32,7 +32,7 @@ hide: navigation, toc
 			<div class="marker"><div class="circle">3</div></div>
 			<div class="content" id="camp2">
 				<h3><b>POSN Camp 2</b></h3>
-				<p class="muted">ทำความเข้าใจและเรียนรู้เกี่ยวกับ Data Structures และ Algorithm ต่างๆ รวมถึงการประยุกต์ใช้ในการทำโจทย์</p><hr><p class="muted">แนะนำให้ทำโจทย์ที่ติด Tag : <code>POSN2</code> และให้หมั่นฝึกโจทย์ที่ต้องใช้เนื้อหาที่เราไม่ถนัด โดยสามารถไปหาดูได้ใน <a href="/problems">Problems</a></p>
+				<p class="muted">ทำความเข้าใจและเรียนรู้เกี่ยวกับ Data Structures และ Algorithm ต่างๆ รวมถึงการประยุกต์ใช้ในการทำโจทย์</p><hr><p class="muted">แนะนำให้ทำโจทย์และอ่าน Algorithm ที่ติด Tag : <code>POSN2</code> และให้หมั่นฝึกโจทย์ที่ต้องใช้เนื้อหาที่เราไม่ถนัด โดยสามารถไปหาดูได้ใน <a href="/problems">Problems</a> และสามารถหาอ่านเพิ่มเติมได้ <a href="https://usaco.guide/gold/">ที่นี่</a> หรือ <a href="https://cp-algorithms.com/">ที่นี่</a></p>
 			</div>
 		</div>
 
@@ -40,7 +40,7 @@ hide: navigation, toc
 			<div class="marker"><div class="circle">4</div></div>
 			<div class="content" id="toi">
 				<h3><b>Thailand Olympiad in Informatics (TOI)</b></h3>
-				<p class="muted">ฝึกโจทย์เก่าเยอะๆ รวมถึงโจทย์อื่นๆ ด้วย และให้หมั่นทำโจทย์แนว/เนื้อหาที่ไม่ถนัด</p><hr><p class="muted">แนะนำให้ทำโจทย์ที่ติด Tag : <code>TOI</code> หรือสามารถหาโจทย์เก่าอื่น ๆ ได้<a href="https://programming.in.th/">ที่นี่</a> หรือ <a href="https://otog.in.th/">ที่นี่</a></p>
+				<p class="muted">ฝึกโจทย์เก่าเยอะๆ รวมถึงโจทย์อื่นๆ ด้วย และให้หมั่นทำโจทย์แนว/เนื้อหาที่ไม่ถนัด</p><hr><p class="muted">แนะนำให้ทำโจทย์ที่ติด Tag : <code>TOI</code> หรือสามารถหาโจทย์เก่าอื่น ๆ ได้ <a href="https://programming.in.th/">ที่นี่</a> หรือ <a href="https://otog.in.th/">ที่นี่</a></p>
 			</div>
 		</div>
 	</div>
