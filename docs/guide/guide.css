@@ -121,7 +121,7 @@ body[data-md-color-scheme="dark"] .steps::before {
     }
 
     .road-column {
-        flex: 0 0 32px;
+        flex: 0 0 44px;
     }
 
     .steps {
@@ -129,21 +129,31 @@ body[data-md-color-scheme="dark"] .steps::before {
     }
 
     .steps::before {
-        left:2px; /* move the guide bar even closer to left edge */
+        left:0; /* flush the guide bar to the viewport edge */
+        width:20px; /* slightly wider for better visibility on mobile */
+        border-radius:10px;
     }
 
     .step { 
-        grid-template-columns:32px 1fr; 
+        grid-template-columns:44px 1fr; 
     }
 
     .marker { 
-        width:32px; 
+        width:44px; 
+        position:relative; /* establish containing block for absolute circle */
+        justify-content:flex-start; /* align circle toward left */
+        padding-left:0;
     }
 
     .circle { 
-        width:16px; 
-        height:16px; 
-        font-size:0.68rem;
+        width:36px; 
+        height:36px; 
+        font-size:1rem;
+        position:absolute; /* center the circle over the guide bar */
+        left:10px; /* half of .steps::before width (20px) */
+        top:50%;
+        transform:translate(-50%, -50%);
+        z-index:4;
     }
 }
 
