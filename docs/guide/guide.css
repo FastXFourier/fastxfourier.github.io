@@ -98,7 +98,7 @@
     .steps::before { background: rgb(45,45,45) !important; }
 }
 body[data-md-color-scheme="default"] .steps::before {
-    background: rgb(45, 45, 45) !important;
+    background: rgb(56, 56, 56) !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -106,7 +106,7 @@ body[data-md-color-scheme="default"] .steps::before {
 }
 body[data-md-color-scheme="slate"] .steps::before,
 body[data-md-color-scheme="dark"] .steps::before {
-    background: rgb(204, 204, 204) !important;
+    background: rgb(165, 165, 165) !important;
 }
 
 /* Mobile: align roadmap bar to the left and give content more room */
