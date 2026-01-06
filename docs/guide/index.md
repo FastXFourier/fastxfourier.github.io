@@ -65,13 +65,12 @@ hide: navigation, toc
 					ทำโจทย์ที่ติด Tag : <code>POSN2</code> ใน <a href="/problems">Problems</a> 
 					</li>
 					<li>
-					ทำโจทย์ตามเนื้อหาที่กำลังเรียนรู้/ไม่ถนัด ใน <a href="https://cses.fi/problemset/">เว็บนี้</a>
+					ทำโจทย์ตามเนื้อหาที่กำลังเรียนรู้/ไม่ถนัด ใน <a href="https://cses.fi/problemset/">เว็บนี้</a> หรือ <a href="https://usaco.guide/problems">เว็บนี้</a>
 					</li>
 					<li>
 					หาข้อสอบท้ายค่ายเก่าๆได้จาก <a href="https://grader.gchan.moe/problemset">เว็บนี้</a> (ทำข้อที่ขึ้นต้นด้วย <code>c2</code>)
 					</li>
-					<li>ข้อ <code>1XXX</code> ใน <a href="https://programming.in.th/tasks/">เว็บนี้</a></li>
-					<li>ข้อที่ขึ้นต้นด้วย <code>codecube</code> ใน <a href="https://programming.in.th/tasks/">เว็บนี้</a> ก็ดีเหมือนกันนะ</li>
+					<li>ข้อที่ขึ้นต้นด้วย <code>codecube</code> ใน <a href="https://programming.in.th/tasks/">เว็บนี้</a></li>
 					<li>
 					หากอยากได้โจทย์ที่ท้าทายๆหน่อย ก็ทำโจทย์เก่า TOI ได้เลยจาก <a href="https://programming.in.th/">เว็บนี้</a> หรือ <a href="https://otog.in.th/">เว็บนี้</a>
 					</li>
@@ -88,6 +87,9 @@ hide: navigation, toc
 				<ul>
 					<li>
 					ทำโจทย์ที่ติด Tag : <code>TOI</code> หรือสามารถหาโจทย์เก่าอื่น ๆ ได้ <a href="https://programming.in.th/">ที่นี่</a> หรือ <a href="https://otog.in.th/">ที่นี่</a>
+					</li>
+					<li>
+					สามารถจำลองบรรยากาศการสอบแข่งขันจริงได้ที่ <a href="https://codeforces.com/">เว็บนี้</a>
 					</li>
 				</ul>
 			</div>
