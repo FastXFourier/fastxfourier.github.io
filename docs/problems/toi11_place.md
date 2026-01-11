@@ -152,7 +152,7 @@ bool unite(int x, int y){
 
 ## **Code**
 
-```cpp title="TOI13_Traveler.cpp"
+```cpp title="TOI11_Place.cpp"
 #include <bits/stdc++.h>
 
 using namespace std;
