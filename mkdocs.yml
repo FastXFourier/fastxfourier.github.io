@@ -9,6 +9,7 @@ nav:
     - Algorithms: algorithms/index.md
     - Problems: problems/index.md
     - Others: others/index.md
+    - Guide: guide/index.md
 
 theme:
     name: material
