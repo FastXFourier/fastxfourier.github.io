@@ -11,4 +11,5 @@ hide: navigation, toc
 ทุกบทเฉลยเขียนด้วยภาษาไทย เข้าใจง่าย พร้อมอธิบายแนวคิดอย่างละเอียด ไม่ว่าคุณจะกำลังเริ่มต้น หรืออยากทบทวนโจทย์ยาก ๆ — เราพร้อมช่วยคุณเสมอ
 
 ศึกษาโจทย์: [Click Here](problems/index.md)<br>
-ศึกษาอัลกอริทึม: [Click Here](algorithms/index.md)
+ศึกษาอัลกอริทึม: [Click Here](algorithms/index.md)<br>
+อ่านคำแนะนำการฝึกเขียนโค้ด: [Click Here](guide/index.md)
