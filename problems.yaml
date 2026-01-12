@@ -11,6 +11,15 @@
 #     solution: Path to solution page (optional, defaults to /problems/{id})
 
 problems:
+    - id: toi11_place
+      title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 11 ข้อ toi11_place
+      link: https://programming.in.th/tasks/toi11_place
+      difficulty: Easy
+      source: TOI
+      topics: 
+        - Disjoint Set Union
+        - Minimum Spanning Tree
+
     - id: toi13_traveler
       title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 13 ข้อ toi13_traveler
       link: https://programming.in.th/tasks/toi13_traveler
