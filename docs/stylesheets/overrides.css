@@ -371,14 +371,15 @@ body[data-md-color-scheme="default"] .tag-toggle {
     }
 }
 
-body[data-md-color-scheme="default"] .md-header__title,
-body[data-md-color-scheme="default"] .md-header__topic,
-body[data-md-color-scheme="default"] .md-header__ellipsis,
-body[data-md-color-scheme="default"] .md-header .md-logo,
-body[data-md-color-scheme="default"] .md-header .md-header__button,
-body[data-md-color-scheme="default"] .md-nav__link,
-body[data-md-color-scheme="default"] .md-tabs__link {
-    color: #ffffff !important;
+/* body[data-md-color-scheme="default"] .md-header__title, */
+/* body[data-md-color-scheme="default"] .md-header__topic, */
+/* body[data-md-color-scheme="default"] .md-header__ellipsis, */
+/* body[data-md-color-scheme="default"] .md-header .md-logo, */
+/* body[data-md-color-scheme="default"] .md-header .md-header__button, */
+body[data-md-color-scheme="default"] .md-nav__link
+/* ,body[data-md-color-scheme="default"] .md-tabs__link  */
+{
+    color: #000000 !important;
 }
 
 
