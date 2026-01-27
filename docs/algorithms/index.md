@@ -30,16 +30,6 @@ hide: navigation, toc
 
 <!-- Problems grid -->
 <div class="grid cards" markdown="1">
-<div class="problem-card" data-difficulty="Easy" data-topics="Graph,Data Structures" markdown="1">
-### DSU (Disjoint Set Union) & MST (Minimum Spanning Tree)
-
-!!! success "**Difficulty**: `Easy`"
-??? Topics
-    - `Graph Algorithms`
-
-[View Tutorial](/problems/toi11_place)
-</div>
-
 <div class="problem-card" data-difficulty="Easy" data-topics="Graph" markdown="1">
 ### Dijkstra's Algorithm
 

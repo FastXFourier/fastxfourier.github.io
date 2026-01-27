@@ -144,7 +144,7 @@ bool unite(int x, int y){
 
 จบเลย ขั้นตอนการทำงานของ **MST** มีเพียงแค่นั้นแหละ
 
-สามารถดูวิดีโอที่อยู่ในใน [เว็บนี้](https://usaco.guide/gold/mst?lang=cpp) เพื่อให้เข้าใจการทำงานของ **MST** ได้มากขึ้น **(ในเว็บนี้ จะใช้ Minimum Spanning Tree แต่สำหรับข้อนี้ เราจะใช้ Maximum Spanning Tree)**
+สามารถดูวิดีโอใน [เว็บนี้](https://usaco.guide/gold/mst?lang=cpp) เพื่อให้เข้าใจการทำงานของ **MST** ได้มากขึ้น **(ในเว็บนี้ จะใช้ Minimum Spanning Tree แต่สำหรับข้อนี้ เราจะใช้ Maximum Spanning Tree)**
 
 ---
 
