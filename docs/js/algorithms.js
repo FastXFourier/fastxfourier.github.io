@@ -18,8 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
   picker.style.display = visible;
   btn.textContent = visible === 'none' ? 'Tags ⬆️' : 'Tags ⬇️';
 
-  document.querySelectorAll('.filter-difficulty, .tag')
-    .forEach(cb => cb.addEventListener('change', applyFilter));
+  document.querySelectorAll(
+    '.filter-difficulty, .tag, .filter-source'
+  ).forEach(cb => cb.addEventListener('change', applyFilter));
 
   applyFilter();
 });
@@ -27,14 +28,17 @@ document.addEventListener("DOMContentLoaded", () => {
 function applyFilter() {
   const selectedD = [...document.querySelectorAll('.filter-difficulty:checked')].map(cb => cb.value);
   const selectedT = [...document.querySelectorAll('.tag:checked')].map(cb => cb.value);
+  const selectedS = [...document.querySelectorAll('.filter-source:checked')].map(cb => cb.value);
 
   document.querySelectorAll('.problem-card').forEach(card => {
-    const cardD = card.dataset.difficulty.split(',').map(s => s.trim());
-    const cardT = card.dataset.topics.split(',').map(s => s.trim());
+    const cardD = card.dataset.difficulty?.split(',').map(s => s.trim()) ?? [];
+    const cardT = card.dataset.topics?.split(',').map(s => s.trim()) ?? [];
+    const cardS = card.dataset.source?.split(',').map(s => s.trim()) ?? [];
 
     const visible =
       (selectedD.length === 0 || selectedD.some(d => cardD.includes(d))) &&
-      (selectedT.length === 0 || selectedT.some(t => cardT.includes(t)));
+      (selectedT.length === 0 || selectedT.some(t => cardT.includes(t))) &&
+      (selectedS.length === 0 || selectedS.some(s => cardS.includes(s)));
 
     card.style.display = visible ? '' : 'none';
   });
