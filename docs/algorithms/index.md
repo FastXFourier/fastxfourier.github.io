@@ -30,6 +30,16 @@ hide: navigation, toc
 
 <!-- Problems grid -->
 <div class="grid cards" markdown="1">
+<div class="problem-card" data-difficulty="Easy" data-topics="Dynamic Programming" markdown="1">
+### Introduction to Dynamic Programming
+
+!!! danger "**Difficulty**: `Easy`"
+??? Topics
+    - `Dynamic Programming`
+
+[View Tutorial](/problems/toi10_goschool)
+</div>
+
 <div class="problem-card" data-difficulty="Easy" data-topics="Graph,Data Structures" markdown="1">
 ### DSU (Disjoint Set Union) & MST (Minimum Spanning Tree)
 

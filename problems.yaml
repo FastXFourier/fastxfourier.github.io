@@ -11,6 +11,14 @@
 #     solution: Path to solution page (optional, defaults to /problems/{id})
 
 problems:
+    - id: toi10_goschool
+      title: โจทย์ทดสอบระบบ การแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 10 ข้อ toi10_goschool
+      link: https://programming.in.th/tasks/toi10_goschool
+      difficulty: Easy
+      source: TOI
+      topics: 
+        - Dynamic Programming
+
     - id: toi11_place
       title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 11 ข้อ toi11_place
       link: https://programming.in.th/tasks/toi11_place
