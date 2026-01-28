@@ -33,7 +33,7 @@ hide: navigation, toc
 <div class="problem-card" data-difficulty="Easy" data-topics="Dynamic Programming" markdown="1">
 ### Introduction to Dynamic Programming
 
-!!! danger "**Difficulty**: `Easy`"
+!!! success "**Difficulty**: `Easy`"
 ??? Topics
     - `Dynamic Programming`
 
