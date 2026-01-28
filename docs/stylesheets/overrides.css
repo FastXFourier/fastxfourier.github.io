@@ -25,13 +25,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
     transition: box-shadow 0.2s ease;
-    padding-left: 5%;
-    padding-bottom: 20px;
+    padding: 15px;
 }
 
 .problem-card:hover {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.problem-card > * {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .problem-card .header {
@@ -164,9 +170,10 @@ body.md-page-problems-index .md-main__inner {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
     transition: box-shadow 0.2s ease;
-    padding-left: 5%;
-    padding-bottom: 20px;
+    padding: 15px;
     background-color: white;
     color: rgb(37, 37, 37);
     margin-bottom: 10px;
