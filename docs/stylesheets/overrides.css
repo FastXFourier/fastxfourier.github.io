@@ -165,6 +165,7 @@ body.md-page-problems-index .md-main__inner {
     justify-content: space-between;
     transition: box-shadow 0.2s ease;
     padding: 15px;
+    padding-left: 5%;;
     background-color: white;
     color: rgb(37, 37, 37);
     margin-bottom: 10px;
