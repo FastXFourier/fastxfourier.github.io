@@ -18,11 +18,17 @@ document.addEventListener("DOMContentLoaded", () => {
   picker.style.display = visible;
   btn.textContent = visible === 'none' ? 'Tags ⬆️' : 'Tags ⬇️';
 
-  document.querySelectorAll(
-    '.filter-difficulty, .tag, .filter-source'
-  ).forEach(cb => cb.addEventListener('change', applyFilter));
-
   applyFilter();
+});
+
+document.addEventListener('change', (e) => {
+  if (
+    e.target.matches('.filter-difficulty') ||
+    e.target.matches('.tag') ||
+    e.target.matches('.filter-source')
+  ) {
+    applyFilter();
+  }
 });
 
 function applyFilter() {
