@@ -147,18 +147,12 @@ function applyFilter() {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    text-align: center;
     border: 1px solid #ccc;
     border-radius: 7px;
     padding: 15px;
     background: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     color: grey;
-}
-.problem-card > * {
-    width: 100%;
-    box-sizing: border-box;
 }
 .tagbox {
     color: black;

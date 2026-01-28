@@ -26,8 +26,7 @@
     flex-direction: column;
     justify-content: space-between;
     transition: box-shadow 0.2s ease;
-    padding-left: 5%;
-    padding-bottom: 20px;
+    padding: 15px;
 }
 
 .problem-card:hover {
@@ -165,8 +164,7 @@ body.md-page-problems-index .md-main__inner {
     flex-direction: column;
     justify-content: space-between;
     transition: box-shadow 0.2s ease;
-    padding-left: 5%;
-    padding-bottom: 20px;
+    padding: 15px;
     background-color: white;
     color: rgb(37, 37, 37);
     margin-bottom: 10px;
