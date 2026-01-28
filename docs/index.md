@@ -12,4 +12,4 @@ hide: navigation, toc
 
 ศึกษาโจทย์: [Click Here](problems/index.md)<br>
 ศึกษาอัลกอริทึม: [Click Here](algorithms/index.md)<br>
-อ่านคำแนะนำการฝึกเขียนโค้ด: [Click Here](guide/index.md)
+<!-- อ่านคำแนะนำการฝึกเขียนโค้ด: [Click Here](guide/index.md) -->

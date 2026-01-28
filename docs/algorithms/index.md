@@ -141,8 +141,12 @@ function applyFilter() {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 10px;
+    align-items: stretch;
 }
 .problem-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 1px solid #ccc;
     border-radius: 7px;
     padding: 15px;

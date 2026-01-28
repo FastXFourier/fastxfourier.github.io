@@ -102,5 +102,6 @@
     "typeinfo": "cpp",
     "valarray": "cpp",
     "variant": "cpp"
-  }
+  },
+  "cursorpyright.analysis.typeCheckingMode": "basic"
 }
