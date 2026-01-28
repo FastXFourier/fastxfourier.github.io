@@ -73,7 +73,7 @@ for (int i = 3; i <= N; i++) {
 
 ### **หลักการทำ Dynamic Programming**
 
-หลักๆ จะมี 3 องค์ประกอบ ได้แก่
+หลักๆ จะมี 3 ขั้นตอน ได้แก่
 
 1. **DP Definition : กำหนดนิยาม**
     เราจะกำหนดให้ได้ว่า $dp[i]$ จะมีความหมายเป็นอะไร ในกรณี Fibonacci จะได้ว่า 
@@ -94,7 +94,7 @@ for (int i = 3; i <= N; i++) {
     $$
     dp[i] =
     \begin{cases}
-    1 & \text{if } i = 1 \text{ or } i = 2 \\
+    1 & \text{if } i = 1 \text{ or } i = 2 (Base Case)\\
     dp[i - 1] + dp[i - 2] & \text{otherwise}
     \end{cases}
     $$
@@ -108,7 +108,7 @@ for (int i = 3; i <= N; i++) {
 
 ### **วิธีทำ**
 
-สำหรับข้อนี้ เราจะนำไอเดียของ Dynamic Programming มาใช้ แต่แทนที่จะเป็น $dp$ 1 มิติ เราจะทำเป็น $dp$ 2 มิติแทน ซึ่ง DP Definition และ State Transition จะเป็น:
+สำหรับข้อนี้ เราจะนำไอเดียของ Dynamic Programming มาใช้ แต่แทนที่จะเป็น $dp$ 1 มิติ เราจะทำเป็น $dp$ 2 มิติแทน ซึ่ง DP Definition, Base Case และ State Transition จะเป็น:
 
 1. **DP Definition : กำหนดนิยาม**
     $$
@@ -127,7 +127,7 @@ for (int i = 3; i <= N; i++) {
     $$
     dp[i][j] =
     \begin{cases}
-    0 & \text{if there is a dog at } (i,j) \\ 1 & \text{if } i = 1 \text{ and } j = 1 \\
+    0 & \text{if there is a dog at } (i,j) \\ 1 & \text{if } i = 1 \text{ and } j = 1 (Base Case) \\
     dp[i-1][j] + dp[i][j-1] & \text{otherwise} \\ 
     \end{cases}
     $$
