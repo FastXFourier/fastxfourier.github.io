@@ -1,0 +1,453 @@
+.md-nav__link--active {
+    color: #3856ff !important;
+    font-weight: bold;
+}
+
+.md-sidebar--primary .md-nav__link:hover {
+    color: #5330ff !important;
+}
+
+.md-tabs__link--active {
+    color: #2c28ff !important;
+    font-weight: bold;
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.problem-card {
+    border: 1px solid var(--md-default-fg-color);
+    border-radius: 8px;
+    background-color: var(--md-default-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.2s ease;
+    padding: 15px;
+}
+
+.problem-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.problem-card .header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.problem-card .tags-spoiler summary {
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+}
+
+.problem-card .tags {
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+    color: var(--md-secondary-fg-color);
+}
+
+.problem-card .view-solution a {
+    text-decoration: none;
+    color: var(--md-accent-fg-color);
+    font-weight: bold;
+    margin-top: auto;
+}
+
+/* Hide all top header and navbar elements on the Problems page */
+body.md-page-problems-index .md-header,
+body.md-page-problems-index .md-top,
+body.md-page-problems-index .md-header-nav {
+    display: none !important;
+}
+
+/* Hide sidebar / drawer */
+body.md-page-problems-index .md-sidebar,
+body.md-page-problems-index .md-drawer {
+    display: none !important;
+}
+
+/* Hide footer */
+body.md-page-problems-index .md-footer {
+    display: none !important;
+}
+
+/* Remove main padding to move content up */
+body.md-page-problems-index .md-main {
+    padding-top: 0 !important;
+}
+
+/* Remove layout gap reserved for sidebar */
+body.md-page-problems-index .md-main__inner {
+    margin-left: 0 !important;
+    max-width: 100% !important;
+}
+
+.tag {
+    color: rgb(148, 148, 148);
+}
+
+.tag input:checked + span {
+    color: black;
+}
+
+.submit {
+    padding: 5px 10px;
+    cursor: pointer;
+    color: black;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 7px;
+    width: 65px;
+    height: 30px;
+    font-size: 17px;
+    background-color: white;
+    transition-duration: 200ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit:hover {
+    transition-duration: 200ms;
+    background-color: rgb(230, 230, 230);
+}
+
+.tagbox {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border-radius: 7px;
+}
+
+.tag-toggle {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 5px 15px;
+    font-size: 16px;
+    transition-duration: 200ms;
+    color: black;
+}
+
+.bitmask_dp {
+    width: 400px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.bitmask-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.pdfshow {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 700px;
+}
+
+.problem-card-other {
+    border: 1px solid var(--md-default-fg-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.2s ease;
+    padding: 15px;
+    padding-left: 5%;;
+    background-color: white;
+    color: rgb(37, 37, 37);
+    margin-bottom: 10px;
+}
+
+.problem-card-other:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.problem-card-other .header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.problem-card-other .tags-spoiler summary {
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+}
+
+.problem-card-other .tags {
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+    color: var(--md-secondary-fg-color);
+}
+
+.problem-card-other .view-solution a {
+    text-decoration: none;
+    color: var(--md-accent-fg-color);
+    font-weight: bold;
+    margin-top: auto;
+}
+
+/* Dark mode: soften pure white colors to a dimmer white for less glare */
+@media (prefers-color-scheme: dark) {
+    /* Use a slightly dimmer white and increase transparency for backgrounds */
+    .submit {
+        background-color: rgba(230,230,230,0.12); /* softer on dark bg */
+        color: #e6e6e6;
+        border-color: rgba(230,230,230,0.18);
+    }
+    .submit:hover {
+        background-color: rgba(230,230,230,0.16);
+    }
+
+    .tagbox {
+        background: rgba(255,255,255,0.03);
+        border-color: rgba(255,255,255,0.06);
+        color: #e6e6e6;
+    }
+    .tagbox * {
+        color: #e6e6e6;
+    }
+
+    .tag-toggle {
+        background-color: rgba(255,255,255,0.04);
+        color: #e6e6e6;
+        border-color: rgba(230,230,230,0.12);
+    }
+
+    .problem-card, .problem-card-other {
+        background-color: rgba(255,255,255,0.03);
+        color: #e6e6e6;
+        border-color: rgba(255,255,255,0.06);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+
+    /* Generic fixes for any remaining white backgrounds inside docs */
+    .md-typeset, .md-content, .md-main, .md-main__inner {
+        background-color: transparent;
+    }
+    /* Reduce bright primary white usage in links/headers */
+    .md-nav__link--active, .md-tabs__link--active, .md-header, .md-footer {
+        color: #e6e6e6 !important;
+    }
+}
+
+/* More specific: Material theme sets `data-md-color-scheme="slate"` on <body> for dark palette.
+   Use attribute selectors to ensure overrides apply when the site is in the dark palette. */
+body[data-md-color-scheme="slate"] .submit {
+    background-color: rgba(230,230,230,0.12) !important;
+    color: #e6e6e6 !important;
+    border-color: rgba(230,230,230,0.18) !important;
+}
+body[data-md-color-scheme="slate"] .submit:hover {
+    background-color: rgba(230,230,230,0.16) !important;
+}
+body[data-md-color-scheme="slate"] .tagbox {
+    background: rgba(255,255,255,0.03) !important;
+    border-color: rgba(255,255,255,0.06) !important;
+    color: #e6e6e6 !important;
+}
+body[data-md-color-scheme="slate"] .tagbox * {
+    color: #e6e6e6 !important;
+}
+body[data-md-color-scheme="slate"] .tag-toggle {
+    background-color: rgba(255,255,255,0.04) !important;
+    color: #e6e6e6 !important;
+    border-color: rgba(230,230,230,0.12) !important;
+}
+body[data-md-color-scheme="slate"] .problem-card,
+body[data-md-color-scheme="slate"] .problem-card-other {
+    background-color: rgba(255,255,255,0.03) !important;
+    color: #e6e6e6 !important;
+    border-color: rgba(255,255,255,0.06) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6) !important;
+}
+
+/* Force text to white-ish in dark (slate) scheme to undo any accidental darkening */
+body[data-md-color-scheme="slate"] .md-typeset,
+body[data-md-color-scheme="slate"] .md-content,
+body[data-md-color-scheme="slate"] .md-main,
+body[data-md-color-scheme="slate"] .md-main__inner,
+body[data-md-color-scheme="slate"] .md-header__title,
+body[data-md-color-scheme="slate"] .md-header__topic,
+body[data-md-color-scheme="slate"] .md-header__ellipsis,
+body[data-md-color-scheme="slate"] .md-header .md-logo,
+body[data-md-color-scheme="slate"] .md-header .md-header__button,
+body[data-md-color-scheme="slate"] .md-nav__link,
+body[data-md-color-scheme="slate"] .md-tabs__link,
+body[data-md-color-scheme="slate"] .tagbox,
+body[data-md-color-scheme="slate"] .tagbox *,
+body[data-md-color-scheme="slate"] .submit,
+body[data-md-color-scheme="slate"] .tag-toggle,
+body[data-md-color-scheme="slate"] .problem-card,
+body[data-md-color-scheme="slate"] .problem-card-other {
+    color: #ffffff !important;
+}
+
+/* Make header / nav text pure white in slate to ensure visibility */
+body[data-md-color-scheme="slate"] .md-header__title,
+body[data-md-color-scheme="slate"] .md-header__topic,
+body[data-md-color-scheme="slate"] .md-header__ellipsis,
+body[data-md-color-scheme="slate"] .md-nav__link,
+body[data-md-color-scheme="slate"] .md-tabs__link {
+    color: #ffffff !important;
+}
+
+/* Also make sure any inline styles (from pages) don't force bright white when dark scheme is active */
+body[data-md-color-scheme="slate"] [style*="background:#fff"],
+body[data-md-color-scheme="slate"] [style*="background:#ffffff"],
+body[data-md-color-scheme="slate"] [style*="background: #fff"],
+body[data-md-color-scheme="slate"] [style*="background: #ffffff"] {
+    background-color: transparent !important;
+}
+
+/* Light mode: make normal text a little darker (near-black) but not pure black */
+@media (prefers-color-scheme: light) {
+    .tagbox,
+    .tagbox * {
+        color: #111214; /* slightly greyed black for text */
+    }
+
+    .md-typeset,
+    .md-content,
+    .md-main,
+    .md-main__inner,
+    .problem-card,
+    .problem-card-other {
+        color: #111214;
+    }
+
+    .submit,
+    .tag-toggle {
+        color: #111214;
+        border-color: rgba(0,0,0,0.65);
+    }
+}
+
+/* Also target the Material theme default palette attribute to ensure the change applies
+   when the site sets the default scheme via JS (body[data-md-color-scheme="default"]) */
+body[data-md-color-scheme="default"] .tagbox,
+body[data-md-color-scheme="default"] .tagbox * {
+    color: #111214 !important;
+}
+body[data-md-color-scheme="default"] .md-typeset,
+body[data-md-color-scheme="default"] .md-content,
+body[data-md-color-scheme="default"] .md-main,
+body[data-md-color-scheme="default"] .md-main__inner,
+body[data-md-color-scheme="default"] .problem-card,
+body[data-md-color-scheme="default"] .problem-card-other {
+    color: #111214 !important;
+}
+body[data-md-color-scheme="default"] .submit,
+body[data-md-color-scheme="default"] .tag-toggle {
+    color: #111214 !important;
+    border-color: rgba(0,0,0,0.65) !important;
+}
+
+/* Make header and navigation text a little darker in light mode */
+@media (prefers-color-scheme: light) {
+    .md-header__title,
+    .md-header__topic,
+    .md-header__ellipsis,
+    .md-header .md-logo,
+    .md-header .md-header__button,
+    .md-nav__link,
+    .md-tabs__link {
+        color: #ffffff !important; /* slightly stronger black for header/nav */
+    }
+}
+
+/* body[data-md-color-scheme="default"] .md-header__title, */
+/* body[data-md-color-scheme="default"] .md-header__topic, */
+/* body[data-md-color-scheme="default"] .md-header__ellipsis, */
+/* body[data-md-color-scheme="default"] .md-header .md-logo, */
+/* body[data-md-color-scheme="default"] .md-header .md-header__button, */
+body[data-md-color-scheme="default"] .md-nav__link
+/* ,body[data-md-color-scheme="default"] .md-tabs__link  */
+{
+    color: #000000 !important;
+}
+
+
+/* Home page centering */
+.home-center {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.homelogo {
+    display: block;
+    margin: 0.5rem auto 1rem auto;
+    max-width: 160px;
+    height: auto;
+}
+
+/* Center homepage title, logo and intro text without editing markdown */
+body.md-page-index .md-typeset,
+body.md-page-index .md-main__inner {
+    text-align: center !important;
+}
+
+/* Ensure logo is centered on the homepage */
+body.md-page-index .homelogo {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Make sure the H1 on the homepage is centered and not stretched */
+body.md-page-index .md-typeset h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Extra strong rule to ensure the homepage H1 is centered in all variants */
+body.md-page-index h1,
+.md-page-index h1,
+body.md-page-index .md-typeset > h1,
+.md-page-index .md-typeset > h1 {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.homelogo {
+    width: 250px;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: black;
+    transition-duration: 400ms;
+}
+
+.homelogo:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition-duration: 400ms;
+}
+
+body.slate .homelogo:hover {
+    box-shadow: 0 8px 16px rgb(255, 255, 255);
+    transition-duration: 400ms;
+}
+
+.floodfill {
+    display: flex;
+    justify-self: center;
+    width: 90%
+}
