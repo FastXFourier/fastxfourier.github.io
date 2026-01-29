@@ -20,6 +20,12 @@ hide: navigation, toc
   <label><input type="checkbox" value="Hard" class="filter-difficulty"> Hard</label>
   <br><br>
 
+  <!-- Source filter -->
+  <strong>Source:</strong><br>
+  <label><input type="checkbox" value="Camp 2" class="filter-source"> Camp 2</label>
+  <label><input type="checkbox" value="TOI" class="filter-source"> TOI</label>
+  <br><br>
+
   <!-- Topics filter -->
   <strong>Topics:</strong><br>
   <label><input type="checkbox" value="Graph" class="tag"> Graph Algorithms</label>
@@ -30,7 +36,7 @@ hide: navigation, toc
 
 <!-- Problems grid -->
 <div class="grid cards" markdown="1">
-<div class="problem-card" data-difficulty="Easy" data-topics="Dynamic Programming" markdown="1">
+<div class="problem-card" data-difficulty="Easy" data-source="Camp 2" data-topics="Dynamic Programming" markdown="1">
 ### Introduction to Dynamic Programming
 
 !!! success "**Difficulty**: `Easy`"
@@ -40,7 +46,7 @@ hide: navigation, toc
 [View Tutorial](/problems/toi10_goschool)
 </div>
 
-<div class="problem-card" data-difficulty="Easy" data-topics="Graph,Data Structures" markdown="1">
+<div class="problem-card" data-difficulty="Easy" data-source="Camp 2" data-topics="Graph,Data Structures" markdown="1">
 ### DSU (Disjoint Set Union) & MST (Minimum Spanning Tree)
 
 !!! success "**Difficulty**: `Easy`"
@@ -50,7 +56,7 @@ hide: navigation, toc
 [View Tutorial](/problems/toi11_place)
 </div>
 
-<div class="problem-card" data-difficulty="Easy" data-topics="Graph" markdown="1">
+<div class="problem-card" data-difficulty="Easy" data-source="Camp 2" data-topics="Graph" markdown="1">
 ### Dijkstra's Algorithm
 
 !!! success "**Difficulty**: `Easy`"
@@ -60,7 +66,7 @@ hide: navigation, toc
 [View Tutorial](/problems/toi13_traveler)
 </div>
 
-<div class="problem-card" data-difficulty="Hard" data-topics="Dynamic Programming" markdown="1">
+<div class="problem-card" data-difficulty="Hard" data-source="TOI" data-topics="Dynamic Programming" markdown="1">
 ### Bitmask DP
 
 !!! danger "**Difficulty**: `Hard`"
@@ -70,7 +76,7 @@ hide: navigation, toc
 [View Tutorial](/problems/toi20_bit_string)
 </div>
 
-<div class="problem-card" data-difficulty="Easy" data-topics="Others" markdown="1">
+<div class="problem-card" data-difficulty="Easy" data-source="Camp 2" data-topics="Others" markdown="1">
 ### Sweep Line
 
 !!! success "**Difficulty**: `Easy`"
@@ -109,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function() {
     btn.textContent = visible === 'none' ? 'Tags ⬆️' : 'Tags ⬇️';
 
     // Add instant filtering on checkbox change
-    document.querySelectorAll('.filter-difficulty, .tag').forEach(cb => {
+    document.querySelectorAll('.filter-difficulty, .tag, .filter-source').forEach(cb => {
         cb.addEventListener('change', applyFilter);
     });
 
@@ -121,13 +127,16 @@ document.addEventListener("DOMContentLoaded", function() {
 function applyFilter() {
     const selectedD = Array.from(document.querySelectorAll('.filter-difficulty:checked')).map(cb => cb.value);
     const selectedT = Array.from(document.querySelectorAll('.tag:checked')).map(cb => cb.value);
+    const selectedS = Array.from(document.querySelectorAll('.filter-source:checked')).map(cb => cb.value);
 
     const cards = document.querySelectorAll('.problem-card');
     cards.forEach(card => {
         const cardD = card.getAttribute('data-difficulty').split(',').map(s => s.trim());
+        const cardS = card.getAttribute('data-source').split(',').map(s => s.trim());
         const cardT = card.getAttribute('data-topics').split(',').map(s => s.trim());
 
         const visible = (selectedD.length === 0 || selectedD.some(d => cardD.includes(d))) &&
+                        (selectedS.length === 0 || selectedS.some(s => cardS.includes(s))) &&
                         (selectedT.length === 0 || selectedT.some(t => cardT.includes(t)));
 
         card.style.display = visible ? '' : 'none';
