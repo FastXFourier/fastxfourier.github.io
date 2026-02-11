@@ -1,25 +1,29 @@
 #include <bits/stdc++.h>
-#define int long long
 
 using namespace std;
 
-int32_t main() {
-    cin.tie(NULL)->sync_with_stdio(false);
-
-    // input
-    int n;
-    cin >> n;
-    vector <int> p(n + 1);
-    for (int i = 1; i <= n; i++) cin >> p[i];
-
-    int ans = 0; // เก็บผลรวมคำตอบ
-
-    // Loop เพื่อคำนวณ
-    for (int i = 1; i < n; i++) {
-        ans += max(0ll, p[i + 1] - p[i]);
+int main(){
+    long long n, m;
+    cin >> n >> m;
+    vector<long long> a(n);
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
     }
-
-    // Output
-    cout << ans << "\n";
-    return 0;
+    long long l = 1, r = 1e18;
+    long long ans = 1e18;
+    while (l <= r) {
+        long long mid = (l + r) / 2;
+        long long sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += mid / a[i];
+        }
+        if (sum >= m) {
+            ans = min(mid, ans);
+            r = mid - 1;
+        }
+        else {
+            l = mid + 1;
+        }
+    }
+    cout << ans;
 }
