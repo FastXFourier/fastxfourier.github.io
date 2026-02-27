@@ -47,7 +47,6 @@ hide: navigation, toc
 [View Tutorial](/problems/otog_862)
 </div>
 
-<div class="grid cards" markdown="1">
 <div class="problem-card" data-difficulty="Easy" data-source="Camp 2" data-topics="Others" markdown="1">
 ### Sliding Window
 
@@ -58,7 +57,6 @@ hide: navigation, toc
 [View Tutorial](/problems/otog_862)
 </div>
 
-<div class="grid cards" markdown="1">
 <div class="problem-card" data-difficulty="Easy" data-source="Camp 2" data-topics="Others" markdown="1">
 ### Binary Search on Answer
 
