@@ -11,6 +11,15 @@
 #     solution: Path to solution page (optional, defaults to /problems/{id})
 
 problems:
+    - id: otog_862
+      title: ข้อสอบท้ายค่าย 2 ศูนย์ สอวน. มหาวิทยาลัยขอนแก่น ข้อ **แห (OTOG ข้อที่ 862)**
+      link: https://programming.in.th/tasks/otog_862
+      difficulty: Easy
+      source: POSN2
+      topics: 
+        - Sieve of Eratosthenes
+        - Sliding Window
+
     - id: toi11_labor
       title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 11 ข้อ toi11_labor
       link: https://programming.in.th/tasks/toi11_labor
