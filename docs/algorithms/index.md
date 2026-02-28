@@ -44,7 +44,7 @@ hide: navigation, toc
 ??? Topics
     - `Others`
 
-[View Tutorial](/problems/otog_862)
+[View Tutorial](/problems/otog_862/#1-sieve-of-eratosthenes)
 </div>
 
 <div class="problem-card" data-difficulty="Easy" data-source="Camp 2" data-topics="Others" markdown="1">
@@ -54,7 +54,7 @@ hide: navigation, toc
 ??? Topics
     - `Others`
 
-[View Tutorial](/problems/otog_862)
+[View Tutorial](/problems/otog_862/#2-sliding-window)
 </div>
 
 <div class="problem-card" data-difficulty="Easy" data-source="Camp 2" data-topics="Others" markdown="1">
