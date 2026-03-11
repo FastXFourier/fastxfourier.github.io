@@ -13,7 +13,7 @@
 problems:
     - id: otog_862
       title: ข้อสอบท้ายค่าย 2 ศูนย์ สอวน. มหาวิทยาลัยขอนแก่น ข้อ **แห (OTOG ข้อที่ 862)**
-      link: https://programming.in.th/tasks/otog_862
+      link: https://api.otog.in.th/problem/doc/862
       difficulty: Easy
       source: POSN2
       topics: 
