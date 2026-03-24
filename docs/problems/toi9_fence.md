@@ -159,4 +159,4 @@ int32_t main(){
 ```
 
 !!! note "Total Time Complexity"
-    $O(N$ $log$ $10^{18})$
+    $O(N \times M \times min(N, M))$
