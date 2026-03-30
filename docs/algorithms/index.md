@@ -37,6 +37,16 @@ hide: navigation, toc
 
 <!-- Problems grid -->
 <div class="grid cards" markdown="1">
+<div class="problem-card" data-difficulty="Easy" data-source="Camp 2" data-topics="Dynamic Programming" markdown="1">
+### Prefix Sum
+
+!!! success "**Difficulty**: `Easy`"
+??? Topics
+    - `Dynamic Programming`
+
+[View Tutorial](/problems/toi9_fence)
+</div>
+
 <div class="problem-card" data-difficulty="Easy" data-source="Camp 1" data-topics="Others" markdown="1">
 ### Sieve of Eratosthenes
 

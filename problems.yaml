@@ -11,6 +11,15 @@
 #     solution: Path to solution page (optional, defaults to /problems/{id})
 
 problems:
+    - id: toi9_fence
+      title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 9 ข้อ toi9_fence
+      link: https://programming.in.th/tasks/toi9_fence
+      difficulty: Easy
+      source: TOI
+      topics: 
+        - Prefix Sum
+        - Brute Force
+
     - id: otog_862
       title: ข้อสอบท้ายค่าย 2 ศูนย์ สอวน. มหาวิทยาลัยขอนแก่น ข้อ **แห (OTOG ข้อที่ 862)**
       link: https://api.otog.in.th/problem/doc/862
