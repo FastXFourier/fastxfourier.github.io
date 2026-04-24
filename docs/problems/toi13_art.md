@@ -98,7 +98,7 @@ title: TOI13_art
 ### **Observation**
 
 \[
-    \forall j > i \mid query(j) \geq query(i)
+    \forall j < i \mid query(j) \geq query(i)
 \]
 
 สังเกตได้ว่า เพราะการ $update$ จะทำจากด้านล่างเสมอ **(แถวที่ 1)** ทำให้สีใดๆที่อยู่ด้านบน จะต้องอยู่ด้านล่างด้วย ทำให้ด้านล่างมีการรวมของสีที่มากกว่าด้านบน จึงได้อสมการดังกล่าว
@@ -111,7 +111,7 @@ title: TOI13_art
 
 ## **Code**
 
-```cpp title="TOI11_Labor.cpp"
+```cpp title="TOI13_art.cpp"
 #include <bits/stdc++.h>
 
 using namespace std;
