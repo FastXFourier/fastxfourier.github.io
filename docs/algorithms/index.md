@@ -37,6 +37,16 @@ hide: navigation, toc
 
 <!-- Problems grid -->
 <div class="grid cards" markdown="1">
+<div class="problem-card" data-difficulty="Hard" data-source="TOI" data-topics="Data Structures" markdown="1">
+### Fenwick Tree (Binary Indexed Tree)
+
+!!! danger "**Difficulty**: `Hard`"
+??? Topics
+    - `Data Structures`
+
+[View Tutorial](/problems/toi13_art)
+</div>
+
 <div class="problem-card" data-difficulty="Easy" data-source="Camp 2" data-topics="Dynamic Programming" markdown="1">
 ### 2D Prefix Sum
 

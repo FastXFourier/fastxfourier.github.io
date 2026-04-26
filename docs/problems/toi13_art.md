@@ -164,20 +164,25 @@ using namespace std;
 
 long long fenwick[1000005];
 
-void update(int idx, long long num) {
-    for (int i = idx; i <= 1000004; i += (i & -i)) {
-        fenwick[i] += num;
+// fenwick update
+void update(int idx, long long val) {
+    while (idx <= 1000004) {
+        fenwick[idx] += num;
+        idx += idx & -idx;
     }
 }
 
+// fenwick query
 long long query(int idx) {
     long long sum = 0;
-    for (int i = idx; i > 0; i -= (i & -i)) {
-        sum += fenwick[i];
+    while (idx > 0) {
+        sum += fenwick[idx];
+        idx -= idx & -idx;
     }
     return sum;
 }
 
+// binary search หาคำแหน่งที่น้อยที่สุดที่ query(idx) <= t
 int bsearch(long long t) {
     int l = 1, r = 1000001, ans = 0;
     while (l <= r) {

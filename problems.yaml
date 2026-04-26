@@ -11,6 +11,16 @@
 #     solution: Path to solution page (optional, defaults to /problems/{id})
 
 problems:
+    - id: toi13_art
+      title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 13 ข้อ toi13_art
+      link: https://programming.in.th/tasks/toi13_art
+      difficulty: Hard
+      source: TOI
+      topics: 
+        - Fenwick Tree
+        - Binary Search
+        - Sweep Line
+
     - id: toi9_fence
       title: ข้อสอบการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 9 ข้อ toi9_fence
       link: https://programming.in.th/tasks/toi9_fence
